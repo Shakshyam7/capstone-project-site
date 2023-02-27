@@ -10,6 +10,7 @@ import Pond from "./Images/pond.jpeg";
 import RedForest from "./Images/Red Forest.jpeg";
 import Ship from "./Images/ship.jpg";
 import Button from "./Components/Button";
+import AppForm from "./Components/AppForm";
 
 const cardItems = [
   {
@@ -71,6 +72,7 @@ function Home() {
           </div>
           <Button class = {"button__primary"} name = {"Contact Us"}  />
         </div>
+        <AppForm />
       </div>
     </div>
   );

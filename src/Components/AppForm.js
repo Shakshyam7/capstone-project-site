@@ -1,14 +1,14 @@
 import React from "react";
-import Textfield from "../Textfield/textfield";
-import Button from "../Buttons/Button";
-import "./Form.css";
+import Textfield from "./textfield";
+import Button from "./Button";
+import "./AppForm.css";
 
-function Form() {
+function AppForm() {
   return (
     <>
       <div className="form__container">
         <div className="form__header">
-          <h6>Fill out the form below and leave us a messege!</h6>
+          <p className = "formText">Fill out the form below and leave us a messege!</p>
 
           <div className="form__text1">
             <Textfield
@@ -43,7 +43,7 @@ function Form() {
             ></textarea>
           </div>
           <div className="button__send">
-            <Button class={"button__primary"} name={"SEND"} />
+            <Button class={"button__primary"} name={"Send"} />
           </div>
         </div>
       </div>
@@ -51,4 +51,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default AppForm;

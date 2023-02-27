@@ -7,15 +7,15 @@
     margin: 56px;
 }
 
-.form__header h6{
+.formText{
     text-align: center;
-    color:  rgba(0, 0, 0, 0.87);
-                                } 
+    margin-bottom: 24px;
+}
 .label__textarea{
     display: block;
     margin: 12px 20px;
     height: 5rem;
-    width: 75%;
+    width: 90%;
     padding: 12px;
     border: 1px solid rgb(0, 0, 0, 0.60);
     border-radius: 4px;
@@ -26,14 +26,11 @@
     outline: none;
 
 }
-
-.form__text2 {
-    margin-top: -20px;
-}
-
 .button__send{
-    margin-bottom:  56px;
+    margin:  56px;
     text-align: center;
-
+}
+.label__textarea::placeholder{
+    font-style: normal;
 }
 
