@@ -65,28 +65,23 @@
 }
 
 
-.nav__menu-item:hover  {
-  border-bottom: 2px solid rgba(209, 81, 111, 0.85);
-}
-
-
-
 .nav__menu-link {
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
-  color: rgb(255, 255, 255, 0.87);
+  color: rgb(255, 255, 255, 0.70);
 }
 
 .nav__menu-link:hover {
-  color: rgba(209, 81, 111, 0.87);
+  color:rgb(255, 255, 255, 87);
   text-decoration: none;
 }
 
 .nav__menu-link:focus {
-  color: c;
+  color: rgb(255, 255, 255, 0.87);
+  border-bottom: 2px solid rgb(255, 255, 255, 87);
   text-decoration: none;
 }
 
@@ -96,18 +91,14 @@
 }
 
 .nav__wishlist-link {
-  color: rgb(255, 255, 255, 0.87);
+  color: rgb(255, 255, 255, 0.70);
   text-decoration: none;
 }
 
-.nav__wishlist-link:hover {
-  color: rgba(209, 81, 111, 0.87);
-  text-decoration: none;
-}
 
-.nav__wishlist-link:focus {
-  color: rgba(209, 81, 111, 0.87);
-  text-decoration: none;
+
+.nav__wishlist-link:hover, :focus {
+  color: rgb(255, 255, 255, 87);
 }
 
 
@@ -119,19 +110,17 @@
 }
 
 .nav__cart-link {
-  color: rgb(255, 255, 255, 0.87);
+  color: rgb(255, 255, 255, 0.70);
   align-items: center;
   text-decoration: none;
 }
 
-.nav__cart-link:hover {
-  color: rgba(209, 81, 111, 0.87);
-  text-decoration: none;
+.nav__cart-link:hover, :focus {
+  color: rgb(255, 255, 255, 0.87);
 }
 
-.nav__cart-link:focus {
-  color: rgba(209, 81, 111, 0.87);
-}
+
+
 
 
 

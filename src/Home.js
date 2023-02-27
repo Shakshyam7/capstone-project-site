@@ -30,7 +30,7 @@ const cardItems = [
   {
     image: RedForest,
     alt: "Paining of Flower hanging int the Wall",
-    title: "Flower by my side",
+    title: "Walking by the Red Forest",
   },
   {
     image: Hilo,
@@ -66,7 +66,7 @@ function Home() {
         ))}
         <div className="text2">
           <div className="textContent">
-            We make customized art for You and your house abd ship to your house
+            We make customized art for You and your house and ship to your house
             with out any fees.
           </div>
           <Button class = {"button__primary"} name = {"Contact Us"}  />
