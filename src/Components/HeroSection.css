@@ -11,16 +11,15 @@
     width: 45%;
     height: 50%;
     text-align: center;
+    font-weight: 600;
 }
 
 .heroText {
 
     flex-wrap: wrap;
-    font-family: 'Hind Siliguri', sans-serif;
-    font-style: normal;
     font-size: 3rem;
     line-height: 85px;
-    color: rgba(0, 0, 0, 0.87)
+    color: rgba(0, 0, 0, 0.87);
 }
 .buttonContainer{
    margin: 48px 0px;
