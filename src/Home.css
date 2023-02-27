@@ -30,9 +30,14 @@
     justify-content: center;
     font-size: 2rem;
     margin: 56px 0px;
-    padding: 24;
+    padding: 24px;
     text-align: center;
-    border: 1px solid pink
+    border-left: 8px solid #D1516F;
+    border-radius: 20px;
+  }
+
+  .textContent{
+    margin-bottom: 32px;
   }
   
   

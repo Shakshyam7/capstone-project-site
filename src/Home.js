@@ -65,7 +65,7 @@ function Home() {
           />
         ))}
         <div className="text2">
-          <div>
+          <div className="textContent">
             We make customized art for You and your house abd ship to your house
             with out any fees.
           </div>
