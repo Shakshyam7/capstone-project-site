@@ -2,10 +2,19 @@
     margin: 0;
     padding: 0 ;
     font-family:  'Average Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.87);
 }
 
 
 
 .homeContainer {
     margin-top: 5rem;
+    
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 24px 0px;
 }

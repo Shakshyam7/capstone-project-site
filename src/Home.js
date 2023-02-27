@@ -11,8 +11,7 @@ function Home() {
           "Add a touch of Beauty to your Home with our Stunning Pieces of Art."
         }
       />
-      <Footer />
-
+      <h2 className="text">Explore Arts from Creative and talented Artists</h2>
     </div>
   );
 }

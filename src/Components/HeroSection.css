@@ -1,9 +1,9 @@
 .heroContainer {
     display: flex;
     justify-content: space-evenly;
-    border: 2px solid rgba(245, 245, 245, 1);
+    border: 2px solid black;
     border-radius: 4px;
-    background-color: rgba(245, 245, 245, 1);
+    background-color: grey;
     padding: 56px;
 
 }
@@ -21,7 +21,7 @@
     flex-wrap: wrap;
     font-family: 'Average Sans', sans-serif;
     font-style: normal;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 85px;
     color: rgba(0, 0, 0, 0.87)
 }

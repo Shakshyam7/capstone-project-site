@@ -19,8 +19,6 @@ function Footer() {
         background: "#212529",
         padding: "56px",
         color: "rgba(255, 255, 255, 0.87)",
-        position: "fixed",
-        bottom: 0
         
       }}
     >

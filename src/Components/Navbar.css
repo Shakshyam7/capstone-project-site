@@ -39,6 +39,7 @@
 .nav__logo-link {
   color: rgba(209, 81, 111, 0.87);
   font-size: 2rem;
+  text-decoration: none;
 }
 
 .nav__logo-link:hover {
@@ -93,11 +94,11 @@
 .nav__wishlist {
   grid-column: 4/5;
   text-align: right;
-  text-decoration: none;
 }
 
 .nav__wishlist-link {
   color: rgb(255, 255, 255, 0.87);
+  text-decoration: none;
 }
 
 .nav__wishlist-link:hover {
@@ -110,21 +111,18 @@
   text-decoration: none;
 }
 
-.nav__wishlist-logo {
-  font-size: 1.5rem;
-  padding-bottom: 6px;
-}
 
 
 .nav__cart {
   grid-column: 5/6;
+  display: inline-block;
   text-align: right;
-  text-decoration: none;
 }
 
 .nav__cart-link {
   color: rgb(255, 255, 255, 0.87);
   align-items: center;
+  text-decoration: none;
 }
 
 .nav__cart-link:hover {
@@ -137,10 +135,7 @@
 }
 
 
-.nav__cart-logo {
-  font-size: 1.5rem;
-  padding-bottom: 6px;
-}
+
 
 @media screen and (max-width: 960px) {
   .nav {
