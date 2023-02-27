@@ -53,26 +53,27 @@ function Home() {
           "Add a touch of Beauty to your Home with our Stunning Pieces of Art."
         }
       />
-      <heading className="text">
-        Explore Arts from Creative and talented Artists
-      </heading>
-      <div className="cardContainer">
-        {cardItems.map((item, index) => (
-          <Card
-            key={index}
-            image={item.image}
-            title={item.title}
-            alt={item.alt}
-          />
-        ))}
-        <div className="text2">
-          <div className="textContent">
-            We make customized art for You and your house and ship to your house
-            with out any fees.
-          </div>
-          <Button class = {"button__primary"} name = {"Contact Us"}  />
+      <div className="imgviewContainer">
+        <heading className="text">
+          Explore Arts from Creative and talented Artists
+        </heading>
+        <div className="cardContainer">
+          {cardItems.map((item, index) => (
+            <Card
+              key={index}
+              image={item.image}
+              title={item.title}
+              alt={item.alt}
+            />
+          ))}
         </div>
-        <AppForm />
+      </div>
+      <div className="text2">
+        <div className="textContent">
+          We make customized art for You and your house and ship to your house
+          with out any fees.
+        </div>
+        <Button class={"button__primary"} name={"Contact Us"} />
       </div>
     </div>
   );

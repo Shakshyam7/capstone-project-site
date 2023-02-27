@@ -32,5 +32,6 @@
 }
 .label__textarea::placeholder{
     font-style: normal;
+    font-family: 'hind' sans-serif;
 }
 

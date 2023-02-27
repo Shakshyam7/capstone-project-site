@@ -18,6 +18,10 @@
   margin: 24px 0px;
 }
 
+.imgviewContainer {
+    background-color: #EEEEEE;
+    padding: 24px 0px;
+}
 .cardContainer{
     margin: 48px ;
     display: flex;
@@ -29,7 +33,7 @@
 .text2{
     justify-content: center;
     font-size: 2rem;
-    margin: 56px 0px;
+    margin: 56px 24px;
     padding: 24px;
     text-align: center;
     border-left: 8px solid #D1516F;
@@ -39,5 +43,4 @@
   .textContent{
     margin-bottom: 32px;
   }
-  
   

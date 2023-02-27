@@ -13,12 +13,12 @@ function Contact() {
       </div>
       <div className="appFormContainer">
         <div className="contactText">
-           <cont>Contact Us</cont>
+           <cont className="cont">Contact Us</cont>
           <p className="para"> We would love to speal with you </p>
           <p className="para"> Feel free to reach out using the below details.</p>
-           <getn>Get In touch</getn>
-          <p className="para"> Phone: +17783475839 <br>
-          </br></p>
+          <p className = "tit">Get In touch</p>
+          <p className="para"> Phone: +17783475839</p>
+          <top className = "num">24 * 365 In Service</top>
         </div>
 
         <div className="appFormContainer">
