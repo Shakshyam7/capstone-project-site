@@ -10,8 +10,10 @@ function HeroSection({text}) {
     <>
       <div className="heroContainer">
         <div className="textContainer">
-          <h1 className="heroText">{text}</h1>
+          <heroTitle className="heroText">{text}</heroTitle>
+          <div className="buttonContainer">
           <Button class={"button__primary"} name={"Explore"} />
+          </div>
         </div>
         <img src={heroImage} alt="Moonlight" width="400" height="300" />
       </div>

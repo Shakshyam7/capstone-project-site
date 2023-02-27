@@ -1,9 +1,6 @@
 .heroContainer {
     display: flex;
     justify-content: space-evenly;
-    border: 2px solid black;
-    border-radius: 4px;
-    background-color: grey;
     padding: 56px;
 
 }
@@ -19,12 +16,16 @@
 .heroText {
 
     flex-wrap: wrap;
-    font-family: 'Average Sans', sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
     font-style: normal;
     font-size: 3rem;
     line-height: 85px;
     color: rgba(0, 0, 0, 0.87)
 }
+.buttonContainer{
+   margin: 48px 0px;
+}
+
 
 .heroContainer img {
     align-items: center;
