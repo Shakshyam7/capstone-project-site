@@ -1,0 +1,37 @@
+.heroContainer {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid rgba(245, 245, 245, 1);
+    border-radius: 4px;
+    background-color: rgba(245, 245, 245, 1);
+    padding: 56px;
+
+}
+
+.textContainer {
+    display: block;
+    flex-wrap: wrap;
+    width: 45%;
+    height: 50%;
+    text-align: center;
+}
+
+.heroText {
+
+    flex-wrap: wrap;
+    font-family: 'Average Sans', sans-serif;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 85px;
+    color: rgba(0, 0, 0, 0.87)
+}
+
+.heroContainer img {
+    align-items: center;
+}
+
+.heroContainer img:hover {
+    transition: all 0.5 ease-in-out;
+    align-items: center;
+    transform: scale(1.05);
+}
