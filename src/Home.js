@@ -7,10 +7,9 @@ import Flower from "./Images/ful.jpg";
 import Hilo from "./Images/hilo.jpg";
 import Serenity from "./Images/serenity.jpeg";
 import Pond from "./Images/pond.jpeg";
-import RedForest from "./Images/Red Forest.jpeg";
+import RedForest from "./Images/RedForest.jpeg";
 import Ship from "./Images/ship.jpg";
 import Button from "./Components/Button";
-import AppForm from "./Components/AppForm";
 
 const cardItems = [
   {
