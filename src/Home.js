@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./Home.css";
 import HeroSection from "./Components/HeroSection";
@@ -10,6 +10,7 @@ import Pond from "./Images/pond.jpeg";
 import RedForest from "./Images/RedForest.jpeg";
 import Ship from "./Images/ship.jpg";
 import Button from "./Components/Button";
+import Modal from "./Components/Modal";
 
 const cardItems = [
   {
@@ -45,6 +46,11 @@ const cardItems = [
 ];
 
 function Home() {
+  const [showContent, setShowContent] = useState(false);
+  const handleClick = () => {
+    setShowContent(!showContent);
+    console.log("yess");
+  };
   return (
     <div className="homeContainer">
       <HeroSection
@@ -63,8 +69,10 @@ function Home() {
               image={item.image}
               title={item.title}
               alt={item.alt}
+              onClick={() => handleClick()}
             />
           ))}
+          {showContent && <Modal />}
         </div>
       </div>
       <div className="text2">

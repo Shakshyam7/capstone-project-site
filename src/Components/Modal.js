@@ -7,17 +7,18 @@ import Me from "./../Images/Me.jpg";
 import Button from "./Button";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import  { HiOutlineX } from "react-icons/hi";
+import { HiOutlineX } from "react-icons/hi";
 
-
-function Modal() {
+function Modal({style}) {
   const [click, setClick] = useState(false);
 
   return (
     <>
-      <div className="modal">
+      <div className="modal" style={style}>
         <div className="modalContainer">
-          <div className="closeIcon"><HiOutlineX /> </div>
+          <div className="closeIcon">
+            <HiOutlineX />
+          </div>
           <div className="modalItemsContainer">
             <div className="image-profileContainer">
               <img
@@ -46,9 +47,7 @@ function Modal() {
                       sx={{ fontSize: 50, color: "rgba(209, 81, 111, 0.87)" }}
                     />
                   ) : (
-                    <FavoriteBorderIcon
-                      sx={{ fontSize: 50, color: ")" }}
-                    />
+                    <FavoriteBorderIcon sx={{ fontSize: 50, color: ")" }} />
                   )}
                 </div>
               </div>
