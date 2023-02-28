@@ -12,17 +12,25 @@
 
 
 .modalContainer {
+  display: flex;
   background-color: #EEEEEE;
   margin: 15% auto;
   padding: 80px;
   width: 80%; 
+
 }
 
+.image-profileContainer {
+  flex: 1.5;
+  width: 100%;
+}
 .profileContainer {
   display: flex;
   margin-top: 24px;
-  border: 1px solid black;
   align-items: center;
+  width: 80%;
+  cursor: pointer;
+
 }
 .profileImage {
   height: 70px;
@@ -32,4 +40,14 @@
 .profileName {
   font-size: 1.2rem;
   margin-left: 16px;
+}
+
+.modaltextContainer{
+  flex: 1;
+}
+
+.modelTitle {
+  font-size: 2rem;
+  font-weight: 500;
+  color:rgba(0, 0, 0, 0.87)
 }

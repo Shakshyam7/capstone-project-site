@@ -1,9 +1,8 @@
 import React from "react";
 import "./Modal.css";
 
-
-import RedForest from "./../Images/RedForest.jpeg"
-import Me from "./../Images/Me.jpg" 
+import RedForest from "./../Images/RedForest.jpeg";
+import Me from "./../Images/Me.jpg";
 import Button from "./Button";
 
 function Modal() {
@@ -11,14 +10,17 @@ function Modal() {
     <>
       <div className="modal">
         <div className="modalContainer">
-          <img src = {RedForest}width = "60%"height= "40%" />
-          <div className="profileContainer">
-          <img src = {Me} className="profileImage"></img>
-          <p className="profileName">Shakshyam Sapkota</p>
+          <div className="image-profileContainer">
+            <img src={RedForest} width="80%" height="70%" />
+            <div className="profileContainer">
+              <img src={Me} className="profileImage"></img>
+              <p className="profileName">Shakshyam Sapkota</p>
+            </div>
           </div>
-        </div>
-        <div>
-          <Button class = "button__primary" name = {"Add to Cart"} />
+          <div className="modaltextContainer">
+            <p className="modelTitle">Walking in Red Forest</p>
+            <Button class="button__primary" name={"Add to Cart"} />
+          </div>
         </div>
       </div>
     </>
@@ -26,4 +28,3 @@ function Modal() {
 }
 
 export default Modal;
-
