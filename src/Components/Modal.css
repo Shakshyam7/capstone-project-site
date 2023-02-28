@@ -18,8 +18,18 @@
   width: 80%; 
 }
 
+.profileContainer {
+  display: flex;
+  margin-top: 24px;
+  border: 1px solid black;
+  align-items: center;
+}
 .profileImage {
   height: 70px;
   width: 70px;
   border-radius: 35px;
+}
+.profileName {
+  font-size: 1.2rem;
+  margin-left: 16px;
 }
