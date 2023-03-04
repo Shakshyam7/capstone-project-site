@@ -17,7 +17,7 @@
 .heroText {
 
     flex-wrap: wrap;
-    font-size: 3rem;
+    font-size: 7vh;
     line-height: 85px;
     color: rgba(0, 0, 0, 0.87);
 }
