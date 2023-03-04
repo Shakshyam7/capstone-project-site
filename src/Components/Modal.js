@@ -9,16 +9,23 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { HiOutlineX } from "react-icons/hi";
 
-function Modal() {
+function Modal(props) {
   const [click, setClick] = useState(false);
-  const [displayModal, setDisplayModal] = useState("block")
+  // const [displayModal, setDisplayModal] = useState("block");
+  const { sharedState, onStateChange } = props;
+  function handleClick(){
+    console.log(sharedState);
+    onStateChange(!sharedState);
+    console.log(sharedState);
+
+  }
 
   return (
     <>
-      <div className="modal" style={{display: displayModal}}>
+      <div className="modal">
         <div className="modalContainer">
           <div className="closeIcon" >
-            { <HiOutlineX onClick={()=>setDisplayModal("none")}/>}
+            { <HiOutlineX onClick={()=>handleClick()}/>}
           </div>
           <div className="modalItemsContainer">
             <div className="image-profileContainer">

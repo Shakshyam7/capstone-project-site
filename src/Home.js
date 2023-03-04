@@ -11,6 +11,9 @@ import RedForest from "./Images/RedForest.jpeg";
 import Ship from "./Images/ship.jpg";
 import Button from "./Components/Button";
 import Modal from "./Components/Modal";
+import ArtistPainting from "./Images/artist-painting.jpg"
+import PaintingHerself from "./Images/painting herself.jpg"
+import She from "./Images/she.jpg"
 
 const cardItems = [
   {
@@ -48,8 +51,9 @@ const cardItems = [
 function Home() {
   const [showContent, setShowContent] = useState(false);
   const handleClick = () => {
+    console.log(showContent);
     setShowContent(!showContent);
-    console.log("yess");
+    console.log(showContent);
   };
   return (
     <div className="homeContainer">
@@ -72,7 +76,9 @@ function Home() {
               onClick={() => handleClick()}
             />
           ))}
-          {showContent && <Modal />}
+          {showContent && (
+            <Modal sharedState={showContent} onStateChange={handleClick} />
+          )}
         </div>
       </div>
       <div className="text2">
@@ -81,6 +87,14 @@ function Home() {
           with out any fees.
         </div>
         <Button class={"button__primary"} name={"Contact Us"} />
+      </div>
+      <div className="exert">
+        "Art is not what u see but What You Make Other See
+      </div>
+      <div className="imageContainer">       
+      <img style = {{ height: '500px', objectFit: "fill"}} src = {ArtistPainting}/>
+      <img style = {{ height: '500px', objectFit: "fill"}} src = {PaintingHerself}/>
+      <img style = {{ height: '500px', objectFit: "fill"}} src = {She}/>
       </div>
     </div>
   );

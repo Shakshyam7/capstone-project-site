@@ -9,7 +9,7 @@ function Contact() {
   return (
     <>
       <div className="imageContainer">
-        <img src={contact} width="50%" alt="Vector image for contact us page" />
+        <img src={contact} width="50%" alt = "A lady answering calls and emails " />
       </div>
       <div className="appFormContainer">
         <div className="contactText">
