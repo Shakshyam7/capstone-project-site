@@ -11,9 +11,9 @@ import RedForest from "./Images/RedForest.jpeg";
 import Ship from "./Images/ship.jpg";
 import Button from "./Components/Button";
 import Modal from "./Components/Modal";
-import ArtistPainting from "./Images/artist-painting.jpg"
-import PaintingHerself from "./Images/painting herself.jpg"
-import She from "./Images/she.jpg"
+import ArtistPainting from "./Images/artist-painting.jpg";
+import PaintingHerself from "./Images/painting herself.jpg";
+import She from "./Images/she.jpg";
 
 const cardItems = [
   {
@@ -91,10 +91,16 @@ function Home() {
       <div className="exert">
         "Art is not what u see but What You Make Other See
       </div>
-      <div className="imageContainer">       
-      <img style = {{ height: '500px', objectFit: "fill"}} src = {ArtistPainting}/>
-      <img style = {{ height: '500px', objectFit: "fill"}} src = {PaintingHerself}/>
-      <img style = {{ height: '500px', objectFit: "fill"}} src = {She}/>
+      <div className="artistContainer">
+        <div className="image1Container">
+          <img className="image1" src={ArtistPainting} />
+        </div>
+        <div className="image2Container">
+          <img className="image2" src={PaintingHerself} />
+        </div>
+        <div className="image3Container">
+          <img className="image3" src={She} />
+        </div>
       </div>
     </div>
   );
