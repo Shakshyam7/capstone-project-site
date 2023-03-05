@@ -18,42 +18,65 @@ import She from "./Images/she.jpg";
 const cardItems = [
   {
     image: Flower,
-    alt: "Paining of Flower hanging int the Wall",
     title: "Flower by my side",
+    alt: "Paining of Flower hanging int the Wall",
+    price: "$700",
+    artist: "Anna Dhakal"
   },
   {
     image: Serenity,
     alt: "Paining of Flower hanging int the Wall",
     title: "Leaves Scattered in Pond",
+    price: "$200",
+    artist: "Sunita Dawadi"
+
+
   },
   {
     image: Pond,
     alt: "Paining of Flower hanging int the Wall",
     title: "A Quite FullMoon Night",
+    price: "$400",
+    artist: "Sunita Dawadi"
+
+
   },
   {
     image: RedForest,
     alt: "Paining of Flower hanging int the Wall",
     title: "Walking by the Red Forest",
+    price: "$300",
+    artist: "Sunita Dawadi"
+
   },
   {
     image: Hilo,
     alt: "Paining of Flower hanging int the Wall",
     title: "Leaves Scattered in Pond",
+    price: "$500",
+    artist: "Anna Dhakal"
+
+
   },
   {
     image: Ship,
     alt: "Paining of Flower hanging int the Wall",
     title: "A Quite FullMoon Night",
+    price: "$190",
+    artist: "Sunita Dawadi"
+
+
   },
 ];
 
 function Home() {
   const [showContent, setShowContent] = useState(false);
-  const [selectedItem, setSelectedItem] = useState{null}
-  const handleClick = () => {
+  const [selectedItem, setSelectedItem] = useState(null);
+  const handleClick = (item) => {
     setShowContent(!showContent);
+    setSelectedItem(item);
   };
+
   console.log(showContent);
   return (
     <div className="homeContainer">
@@ -73,11 +96,18 @@ function Home() {
               image={item.image}
               title={item.title}
               alt={item.alt}
-              onClick={() => handleClick()}
+              onClick={() => handleClick(item)}
             />
           ))}
           {showContent && (
-            <Modal image = {item.image} onClick={()=>setShowContent(false)} />
+            <Modal
+              image={selectedItem.image}
+              title={selectedItem.title}
+              alt={selectedItem.alt}
+              price = {selectedItem.price}
+              artist = {selectedItem.artist}
+              onClick={() => setShowContent(false)}
+            />
           )}
         </div>
       </div>
@@ -88,7 +118,9 @@ function Home() {
         </div>
         <Button class={"button__primary"} name={"Contact Us"} />
       </div>
-      <div style = {{width: "100%", height: 1, border: "1px solid #212529"}}></div>
+      <div
+        style={{ width: "100%", height: 1, border: "1px solid #212529" }}
+      ></div>
       <div className="exert">
         "Art is not what u see but What You Make Other See
       </div>

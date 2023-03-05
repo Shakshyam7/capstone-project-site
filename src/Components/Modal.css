@@ -75,8 +75,14 @@
 }
 
 .favButton{
-  color: rgba(0, 0, 0, 0.87);
+  background-color: #dddddd;
+  padding: 8px 8px 4px 8px;
+  color: #212529;
   cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+  margin-top: -8px;
 }
 
 .closeIcon {
