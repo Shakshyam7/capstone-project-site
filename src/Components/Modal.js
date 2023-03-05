@@ -9,41 +9,38 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { HiOutlineX } from "react-icons/hi";
 
-function Modal(props) {
+function Modal({ image, title, alt, price, artist, onClick }) {
   const [click, setClick] = useState(false);
-  // const [displayModal, setDisplayModal] = useState("block");
-  const { sharedState, onStateChange } = props;
-  function handleClick(){
-    console.log(sharedState);
-    onStateChange(!sharedState);
-    console.log(sharedState);
+  // const { sharedState, onStateChange } = props;
+  // function handleClick(){
+  //   console.log(sharedState);
+  //   onStateChange(!sharedState);
+  //   console.log(sharedState);
 
-  }
+  // }
 
   return (
     <>
       <div className="modal">
         <div className="modalContainer">
-          <div className="closeIcon" >
-            { <HiOutlineX onClick={()=>handleClick()}/>}
-          </div>
+          <div className="closeIcon">{<HiOutlineX onClick={onClick} />}</div>
           <div className="modalItemsContainer">
             <div className="image-profileContainer">
               <img
                 className="modalImage"
-                src={RedForest}
+                src={image}
                 width="80%"
                 height="70%"
-                alt="A wall art of forest in red color"
+                alt={alt}
               />
               <div className="profileContainer">
                 <img src={Me} className="profileImage"></img>
-                <p className="profileName">Shakshyam Sapkota</p>
+                <p className="profileName">{artist}</p>
               </div>
             </div>
             <div className="modaltextContainer">
-              <p className="modelTitle">Walking in Red Forest</p>
-              <p className="modelDescription">Price: $900</p>
+              <p className="modelTitle">{title}</p>
+              <p className="modelDescription">Price: {price}</p>
 
               <div className="buttonsContainer">
                 <div>

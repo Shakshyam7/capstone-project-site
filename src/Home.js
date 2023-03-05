@@ -50,11 +50,11 @@ const cardItems = [
 
 function Home() {
   const [showContent, setShowContent] = useState(false);
+  const [selectedItem, setSelectedItem] = useState{null}
   const handleClick = () => {
-    console.log(showContent);
     setShowContent(!showContent);
-    console.log(showContent);
   };
+  console.log(showContent);
   return (
     <div className="homeContainer">
       <HeroSection
@@ -77,7 +77,7 @@ function Home() {
             />
           ))}
           {showContent && (
-            <Modal sharedState={showContent} onStateChange={handleClick} />
+            <Modal image = {item.image} onClick={()=>setShowContent(false)} />
           )}
         </div>
       </div>
@@ -88,6 +88,7 @@ function Home() {
         </div>
         <Button class={"button__primary"} name={"Contact Us"} />
       </div>
+      <div style = {{width: "100%", height: 1, border: "1px solid #212529"}}></div>
       <div className="exert">
         "Art is not what u see but What You Make Other See
       </div>
