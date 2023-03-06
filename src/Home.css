@@ -59,12 +59,12 @@
     flex-direction: row;
     margin-top: 80px;
     margin-bottom: 56px;
-
+    background-color: #EEEEEE;
 
 
   }
   .image1Container{
-    width: 33%;
+    width: 33.33%;
     display: flex;
     margin-bottom: 4px;
  
@@ -72,11 +72,11 @@
 
 
   .image2Container{
-    width: 33%;
+    width: 33.33%;
 
   }
   .image3Container{
-    width: 33%;
+    width: 33.33%;
  
   }
 
