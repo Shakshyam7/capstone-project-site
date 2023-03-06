@@ -16,6 +16,7 @@ import PaintingHerself from "./Images/painting herself.jpg";
 import She from "./Images/she.jpg";
 import Anna from "./Images/Anna.jpg"
 import Sunita from "./Images/Sunita.jpg"
+import Newsletter from "./Components/Newsletter";
 
 const cardItems = [
   {
@@ -132,7 +133,7 @@ function Home() {
       <div className="text2">
         <div className="textContent">
           We make customized art for You and your house and ship to your house
-          with out any fees.
+          without any fees.
         </div>
         <Button class={"button__primary"} name={"Contact Us"} />
       </div>
@@ -153,6 +154,7 @@ function Home() {
           <img className="image3" src={She} />
         </div>
       </div>
+      <Newsletter />
     </div>
   );
 }
