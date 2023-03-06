@@ -14,6 +14,8 @@ import Modal from "./Components/Modal";
 import ArtistPainting from "./Images/artist-painting.jpg";
 import PaintingHerself from "./Images/painting herself.jpg";
 import She from "./Images/she.jpg";
+import Anna from "./Images/Anna.jpg"
+import Sunita from "./Images/Sunita.jpg"
 
 const cardItems = [
   {
@@ -21,14 +23,19 @@ const cardItems = [
     title: "Flower by my side",
     alt: "Paining of Flower hanging int the Wall",
     price: "$700",
-    artist: "Anna Dhakal"
+    artist: "Anna Dhakal",
+    artistImage: Anna
   },
   {
     image: Serenity,
     alt: "Paining of Flower hanging int the Wall",
     title: "Leaves Scattered in Pond",
     price: "$200",
-    artist: "Sunita Dawadi"
+    artist: "Sunita Dawadi",
+    artistImage: Sunita
+
+    
+
 
 
   },
@@ -37,7 +44,9 @@ const cardItems = [
     alt: "Paining of Flower hanging int the Wall",
     title: "A Quite FullMoon Night",
     price: "$400",
-    artist: "Sunita Dawadi"
+    artist: "Sunita Dawadi",
+    artistImage: Sunita
+
 
 
   },
@@ -46,7 +55,9 @@ const cardItems = [
     alt: "Paining of Flower hanging int the Wall",
     title: "Walking by the Red Forest",
     price: "$300",
-    artist: "Sunita Dawadi"
+    artist: "Sunita Dawadi",
+    artistImage: Sunita
+
 
   },
   {
@@ -54,7 +65,11 @@ const cardItems = [
     alt: "Paining of Flower hanging int the Wall",
     title: "Leaves Scattered in Pond",
     price: "$500",
-    artist: "Anna Dhakal"
+    artist: "Anna Dhakal",
+    artistImage: Anna,
+
+
+
 
 
   },
@@ -63,7 +78,9 @@ const cardItems = [
     alt: "Paining of Flower hanging int the Wall",
     title: "A Quite FullMoon Night",
     price: "$190",
-    artist: "Sunita Dawadi"
+    artist: "Sunita Dawadi",
+    artistImage: Sunita
+
 
 
   },
@@ -106,6 +123,7 @@ function Home() {
               alt={selectedItem.alt}
               price = {selectedItem.price}
               artist = {selectedItem.artist}
+              artistImage = {selectedItem.artistImage}
               onClick={() => setShowContent(false)}
             />
           )}
