@@ -46,15 +46,7 @@ function Navbar() {
                 Contact
               </Link>
             </li>
-            <li className="nav__menu-item--wishlist">
-              <Link
-                to="/wishlist"
-                className="nav__menu-link--wishlist"
-                onClick={closeMobileMenu}
-              >
-                Wishlist
-              </Link>
-            </li>
+           
             <li className="nav__menu-item--cart">
               <Link
                 to="/cart"
@@ -65,12 +57,6 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-        </div>
-
-        <div className="nav__wishlist">
-          <Link to="/wishlist" className="nav__wishlist-link">
-            Wishlist
-          </Link>
         </div>
 
         <div className="nav__cart">
