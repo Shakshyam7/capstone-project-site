@@ -12,7 +12,7 @@ function Newsletter() {
       </div>
       <div>
         <Textfield class={"textfield"} type={""} placeholder={"Email"} />
-        <Button class="button__primary" name="Send" />
+        <Button className="button__primary" name="Send" />
       </div>
     </div>
   );

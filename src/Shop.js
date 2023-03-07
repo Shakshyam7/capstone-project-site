@@ -19,6 +19,7 @@ function Shop() {
   return (
     <>
       <div className="shopContainer">
+        <div></div>
         {shopItems.map((item, index) => (
           <Card
             key={index}

@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 import "./HeroSection.css";
 
@@ -10,7 +11,9 @@ function HeroSection({ text, image }) {
         <div className="textContainer">
           <heroTitle className="heroText">{text}</heroTitle>
           <div className="buttonContainer">
-            <Button className={"button__primary"} name={"Explore"} />
+            <Link to="./shop">
+              <Button className={"button__primary"} name={"Explore"} />
+            </Link>
           </div>
         </div>
         <img src={image} alt="Moonlight" width="400" height="300" />
