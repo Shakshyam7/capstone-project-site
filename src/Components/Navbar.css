@@ -102,8 +102,14 @@
   text-decoration: none;
 }
 
-.nav__cart-link:hover, :focus {
+.nav__cart-link:hover{
   color: rgb(255, 255, 255, 0.87);
+}
+.nav__cart-link:focus {
+  color: rgb(255, 255, 255, 0.87);
+  padding: 8px;
+  border-bottom: 2px solid rgb(255, 255, 255, 87);
+  text-decoration: none;
 }
 
 
@@ -169,19 +175,19 @@
     text-decoration: none;
   }
 
-  .nav__menu-link--wishlist, .nav__menu-link--cart {
+   .nav__menu-link--cart {
     display: block;
     cursor: pointer;
     padding: 2rem;
-    color:rgb(255, 255, 255, 0.87);
+    color: rgb(255, 255, 255, 0.70);
     text-decoration: none;
     margin-left: 1rem
 
   }
 
-  .nav__menu-link--wishlist:hover, .nav__menu-link--cart:hover {
+   .nav__menu-link--cart:hover {
     display: block;
-    color: rgba(209, 81, 111, 0.87);
+    color: rgb(255, 255, 255, 0.87); 
     border: none;
     text-decoration: none;
 

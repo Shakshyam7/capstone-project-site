@@ -22,7 +22,6 @@ function Cart() {
             <div className="cartPageItemTitle">
               You will have {totalItems} stunning paintings on your wall
             </div>
-            <Button className={"button__primary"} name={"Continue Shopping"} />
 
             {items.map((item) => (
               <CartProducts
@@ -34,6 +33,9 @@ function Cart() {
                 onClick={() => removeItem(item.id)}
               />
             ))}
+              <div style ={{height: "1px", backgroundColor: "black"}}>
+
+              </div>
            
           </>
         )}

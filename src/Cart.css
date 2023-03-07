@@ -30,7 +30,15 @@
     font-size: 1.2rem;
     padding: 12px 24px;
     border-radius: 8px;
-    background-color: black;
-    color:rgba(255, 255, 255, 0.8) 
+    background-color: #212529;
+    color:rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    
+}
+.checkoutButton:hover{
+    transform: translateX(2px);
+    color: black;
+    background-color:rgba(255, 255, 255, 0.87) 
 }
 
