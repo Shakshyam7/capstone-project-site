@@ -32,14 +32,16 @@ function Shop() {
         ))}
         {showContent && (
           <Modal
+            key={selectedItem.id}
             image={selectedItem.image}
             title={selectedItem.title}
             alt={selectedItem.alt}
             price={selectedItem.price}
             artist={selectedItem.artist}
             artistImage={selectedItem.artistImage}
-            onClick={() => {setShowContent(false)
-            addItem(selectedItem)
+            onClick={() => {
+              setShowContent(false);
+              addItem(selectedItem);
             }}
           />
         )}

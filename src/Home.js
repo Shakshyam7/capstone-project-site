@@ -6,10 +6,11 @@ import Card from "./Components/Card/Card";
 import Button from "./Components/Button";
 import Modal from "./Components/Modal";
 import Newsletter from "./Components/Newsletter";
-import cardItems from "./cardItems.json"
-
+import cardItems from "./cardItems.json";
+import { CartProvider, useCart } from "react-use-cart";
 
 function Home() {
+  const { addItem } = useCart();
   const [showContent, setShowContent] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const handleClick = (item) => {
@@ -45,10 +46,13 @@ function Home() {
               image={selectedItem.image}
               title={selectedItem.title}
               alt={selectedItem.alt}
-              price = {selectedItem.price}
-              artist = {selectedItem.artist}
-              artistImage = {selectedItem.artistImage}
-              onClick={() => setShowContent(false)}
+              price={selectedItem.price}
+              artist={selectedItem.artist}
+              artistImage={selectedItem.artistImage}
+              onClick={() => {
+                setShowContent(false);
+                addItem(selectedItem);
+              }}
             />
           )}
         </div>
@@ -58,7 +62,9 @@ function Home() {
           We make customized art for You and your house and ship to your house
           without any fees.
         </div>
-        <Button className={"button__primary"} name={"Contact Us"} />
+        <Button className={"button__primary"} name={"Contact Us"} onClick = {() => {
+          
+        }}/>
       </div>
       <div
         style={{ width: "100%", height: 1, border: "1px solid #212529" }}

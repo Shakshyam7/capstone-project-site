@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import "./Navbar.css";
+import { CartProvider, useCart } from "react-use-cart";
 
 function Navbar() {
+  const {totalUniqueItems} = useCart()
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
+  
   return (
     <>
       <nav className="nav">

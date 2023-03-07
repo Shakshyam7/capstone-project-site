@@ -14,7 +14,7 @@ function CartProducts({image, title, price, onClick}) {
         <div className="productTitle">{title}</div>
         <div className="buttonPriceContainer">
           <div className="price">Price: {price}</div>
-          <Button className ={"button__text"} name="Remove Item" onCilick = {onClick}/>
+          <Button className ={"button__text"} name="Remove Item" onClick = {onClick}/>
         </div>
       </div>
     </div>
