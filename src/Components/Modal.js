@@ -43,7 +43,7 @@ function Modal({ image, title, alt, price, artist, artistImage, onClick }) {
 
               <div className="buttonsContainer">
                 <div>
-                  <Button class="button__primary" name={"Add to Cart"} />
+                  <Button className="button__primary" name={"Add to Cart"} />
                 </div>
                 <div className="favButton" onClick={() => setClick(!click)}>
                   {click ? (

@@ -3,7 +3,7 @@ import React from "react";
 import "./CartProducts.css";
 import Button from "./Button";
 
-function CartProducts({image, title, price}) {
+function CartProducts({image, title, price, onClick}) {
   return (
     <div className="productsContainer">
       <div>
@@ -14,7 +14,7 @@ function CartProducts({image, title, price}) {
         <div className="productTitle">{title}</div>
         <div className="buttonPriceContainer">
           <div className="price">Price: {price}</div>
-          <Button class="button__text" name="Remove Item" />
+          <Button className ={"button__text"} name="Remove Item" onCilick = {onClick}/>
         </div>
       </div>
     </div>

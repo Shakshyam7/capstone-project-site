@@ -43,7 +43,7 @@ function AppForm() {
             ></textarea>
           </div>
           <div className="button__send">
-            <Button class={"button__primary"} name={"Send"} />
+            <Button className={"button__primary"} name={"Send"} />
           </div>
         </div>
       </div>

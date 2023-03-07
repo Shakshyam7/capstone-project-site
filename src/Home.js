@@ -58,7 +58,7 @@ function Home() {
           We make customized art for You and your house and ship to your house
           without any fees.
         </div>
-        <Button class={"button__primary"} name={"Contact Us"} />
+        <Button className={"button__primary"} name={"Contact Us"} />
       </div>
       <div
         style={{ width: "100%", height: 1, border: "1px solid #212529" }}

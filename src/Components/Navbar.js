@@ -8,6 +8,7 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
   return (
     <>
       <nav className="nav">
@@ -61,7 +62,7 @@ function Navbar() {
 
         <div className="nav__cart">
           <Link to="/cart" className="nav__cart-link">
-            Cart(0)
+            Cart({totalUniqueItems})
           </Link>
         </div>
       </nav>
