@@ -24,7 +24,7 @@ function Cart() {
         ) : (
           <>
             <div className="cartPageItemTitle">
-              Add {totalItems} Stunning paintings on your Collection.
+              Add {totalItems} Stunning Art to your Collection.
             </div>
 
             {items.map((item) => (
