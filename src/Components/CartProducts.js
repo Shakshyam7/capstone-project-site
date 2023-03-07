@@ -12,8 +12,8 @@ function CartProducts() {
       />
       <div className="infoContainer">
         <div className="productTitle">A Beautiful Art Painting</div>
-        <div className="button">
-        <div>Price: $299</div>
+        <div className="buttonPriceContainer">
+          <div className="price">Price: $299</div>
           <Button class="button__text" name="Remove Item" />
         </div>
       </div>

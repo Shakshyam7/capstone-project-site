@@ -49,6 +49,11 @@
 .button__text:hover {
     transform: translateX(2px);
     font-size: 1.2rem;
+    color: #ff5252;
+}
+
+.button__text:focus{
+    color: #ff5252;
 
 
 }
