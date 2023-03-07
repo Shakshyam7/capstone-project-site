@@ -6,6 +6,7 @@ import "./Shop.css";
 import Modal from "./Components/Modal";
 import shopItems from "./shopItems.json";
 
+
 function Shop() {
   const [showContent, setShowContent] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);

@@ -6,10 +6,10 @@ import Button from "./Button";
 function CartProducts() {
   return (
     <div className="productsContainer">
-      <img
-        style={{ width: "50vh", height: "40vh" }}
-        src="images/MatkaFul.jpg"
-      />
+      <div>
+        <img className="productImage" src="images/MatkaFul.jpg" />
+      </div>
+
       <div className="infoContainer">
         <div className="productTitle">A Beautiful Art Painting</div>
         <div className="buttonPriceContainer">

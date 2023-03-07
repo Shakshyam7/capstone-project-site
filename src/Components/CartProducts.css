@@ -1,17 +1,18 @@
 .productsContainer {
     display: flex;
-    border: 1px solid black;
-    margin: 12px;
-    width: 50%;
+    margin: 48px;
 }
 
+.productImage{
+    width: 50vh;
+    height: 40vh
+}
 .infoContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin-left: 32px;
-    border: 1px solid black;
-    
+
 
 
 }
@@ -22,12 +23,29 @@
 .buttonPriceContainer {
     display: flex;
     width: fit-content;
-    border: 1px solid black;
     position: relative;
     max-width: auto;
 }
 
 .price{
     margin-right: 80px;
+    width: fit-content;
 }
 
+
+@media screen and (max-width: 768px) {
+   .productsContainer{
+    display: block;
+   }
+
+   .productTitle{
+    font-size: 1.5rem;
+   }
+   .buttonPriceContainer {
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-between;
+    position: relative;
+    max-width: auto;
+}
+}

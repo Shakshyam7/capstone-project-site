@@ -7,6 +7,7 @@ function Cart() {
   return (
     <>
     <div className="cartContainer">
+    
       <CartProducts />
 
     </div>
