@@ -1,7 +1,14 @@
 .shopContainer {
     margin-top: 8rem;
-    justify-content: space-around;
-    
+    margin-bottom: 40px;
+    justify-content: space-around;   
     display: flex;
     flex-wrap: wrap;
+}
+
+@media screen and(max-width: 376px) {
+    .shopContainer{
+        display: block;
+    }
+    
 }
