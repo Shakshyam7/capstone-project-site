@@ -14,13 +14,17 @@ function Cart() {
         {isEmpty ? (
           <>
             <div className="emptyPage">
-              <div className="cartPageTitle">Your cart is empty</div>
+              <div className="cartPageTitle">Your cart is empty!</div>
+              <Button
+                className={"button__primary"}
+                name={"Continue Shopping"}
+              />
             </div>
           </>
         ) : (
           <>
             <div className="cartPageItemTitle">
-              You will have {totalItems} stunning paintings on your wall
+              You will have {totalItems} stunning paintings on your wall.
             </div>
 
             {items.map((item) => (
@@ -33,15 +37,15 @@ function Cart() {
                 onClick={() => removeItem(item.id)}
               />
             ))}
-              <div style ={{height: "1px", backgroundColor: "black"}}>
-
-              </div>
-           
+            <div style={{ height: "1px", backgroundColor: "black" }}></div>
           </>
         )}
-         <div className="checkoutButtonContainer">
-              <button className="checkoutButton">Checkout</button>
-            </div>
+        {
+        !isEmpty &&
+        <div className="checkoutButtonContainer">
+          <button className="checkoutButton">Checkout</button>
+        </div>
+        }
       </div>
     </>
   );
