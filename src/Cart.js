@@ -34,11 +34,12 @@ function Cart() {
                 onClick={() => removeItem(item.id)}
               />
             ))}
-            <div className="checkoutButton">
-              <button >Checkout</button>
-            </div>
+           
           </>
         )}
+         <div className="checkoutButtonContainer">
+              <button className="checkoutButton">Checkout</button>
+            </div>
       </div>
     </>
   );
