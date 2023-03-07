@@ -30,8 +30,22 @@
     margin:  56px;
     text-align: center;
 }
-.label__textarea::placeholder{
+
+.label__textarea{
     font-style: normal;
     font-family: 'hind' sans-serif;
+
+}
+.label__textarea::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 1rem;
+}
+.label__textarea:focus{
+    color: rgb(0, 0, 0, 0.87);
+    font-size: 1rem;
+    font-family: 'Roboto';
+    font-style: normal;
+
 }
 

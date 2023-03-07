@@ -3,89 +3,14 @@ import React, { useState } from "react";
 import "./Home.css";
 import HeroSection from "./Components/HeroSection";
 import Card from "./Components/Card/Card";
-import Flower from "./Images/ful.jpg";
-import Hilo from "./Images/hilo.jpg";
-import Serenity from "./Images/serenity.jpeg";
-import Pond from "./Images/pond.jpeg";
-import RedForest from "./Images/RedForest.jpeg";
-import Ship from "./Images/ship.jpg";
 import Button from "./Components/Button";
 import Modal from "./Components/Modal";
 import ArtistPainting from "./Images/artist-painting.jpg";
 import PaintingHerself from "./Images/painting herself.jpg";
 import She from "./Images/she.jpg";
-import Anna from "./Images/Anna.jpg"
-import Sunita from "./Images/Sunita.jpg"
 import Newsletter from "./Components/Newsletter";
+import cardItems from "./cardItems.json"
 
-const cardItems = [
-  {
-    image: Flower,
-    title: "Flower by my side",
-    alt: "Paining of Flower hanging int the Wall",
-    price: "$700",
-    artist: "Anna Dhakal",
-    artistImage: Anna
-  },
-  {
-    image: Serenity,
-    alt: "Paining of Flower hanging int the Wall",
-    title: "Leaves Scattered in Pond",
-    price: "$200",
-    artist: "Sunita Dawadi",
-    artistImage: Sunita
-
-    
-
-
-
-  },
-  {
-    image: Pond,
-    alt: "Paining of Flower hanging int the Wall",
-    title: "A Quite FullMoon Night",
-    price: "$400",
-    artist: "Sunita Dawadi",
-    artistImage: Sunita
-
-
-
-  },
-  {
-    image: RedForest,
-    alt: "Paining of Flower hanging int the Wall",
-    title: "Walking by the Red Forest",
-    price: "$300",
-    artist: "Sunita Dawadi",
-    artistImage: Sunita
-
-
-  },
-  {
-    image: Hilo,
-    alt: "Paining of Flower hanging int the Wall",
-    title: "Leaves Scattered in Pond",
-    price: "$500",
-    artist: "Anna Dhakal",
-    artistImage: Anna,
-
-
-
-
-
-  },
-  {
-    image: Ship,
-    alt: "Paining of Flower hanging int the Wall",
-    title: "A Quite FullMoon Night",
-    price: "$190",
-    artist: "Sunita Dawadi",
-    artistImage: Sunita
-
-
-
-  },
-];
 
 function Home() {
   const [showContent, setShowContent] = useState(false);

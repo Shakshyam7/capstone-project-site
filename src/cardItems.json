@@ -1,0 +1,51 @@
+[
+    {
+      "image": "./Images/Chill.jpg",
+      "title": "Flower by my side",
+      "alt": "Paining of Flower hanging int the Wall",
+      "price": "$700",
+      "artist": "Anna Dhakal",
+      "artistImage": "Anna"
+    },
+    {
+      "image": "./Images/serenity.jpg",
+      "alt": "Paining of Flower hanging int the Wall",
+      "title": "Leaves Scattered in Pond",
+      "price": "$200",
+      "artist": "Sunita Dawadi",
+      "artistImage": "Sunita"
+    },
+    {
+      "image": "./Images/Chill.jpg",
+      "alt": "Paining of Flower hanging int the Wall",
+      "title": "A Quite FullMoon Night",
+      "price": "$400",
+      "artist": "Sunita Dawadi",
+      "artistImage": "Sunita"
+    },
+    {
+      "image": "./Images/RedForest.jpeg",
+      "alt": "Paining of Flower hanging int the Wall",
+      "title": "Walking by the Red Forest",
+      "price": "$300",
+      "artist": "Sunita Dawadi",
+      "artistImage": "Sunita"
+    },
+    {
+      "image": "./Images/hilo.jpg",
+      "alt": "Paining of Flower hanging int the Wall",
+      "title": "Leaves Scattered in Pond",
+      "price": "$500",
+      "artist": "Anna Dhakal",
+      "artistImage": "Anna"
+    },
+    {
+      "image": "./Images/Chill.jpg",
+      "alt": "Paining of Flower hanging int the Wall",
+      "title": "A Quite FullMoon Night",
+      "price": "$190",
+      "artist": "Sunita Dawadi",
+      "artistImage": "Sunita"
+    }
+  ]
+  

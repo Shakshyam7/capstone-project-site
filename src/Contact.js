@@ -20,9 +20,7 @@ function Contact() {
           <p className="para"> Phone: +17783475839</p>
         </div>
 
-        <div className="appFormContainer">
           <AppForm />
-        </div>
       </div>
     </>
   );

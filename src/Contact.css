@@ -4,7 +4,6 @@
 }
 .appFormContainer{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     background-color: #EEEEEE;   
 }
@@ -32,4 +31,14 @@
     font-size: 1.5rem;
 
 }
+
+@media screen and (max-width: 768px) {
+    .appFormContainer{
+        display: block;
+    }
+ 
+ 
+}
+    
+
 
