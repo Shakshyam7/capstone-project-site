@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./Home.css";
 import HeroSection from "./Components/HeroSection";
@@ -7,7 +8,7 @@ import Button from "./Components/Button";
 import Modal from "./Components/Modal";
 import Newsletter from "./Components/Newsletter";
 import cardItems from "./cardItems.json";
-import { CartProvider, useCart } from "react-use-cart";
+import { useCart } from "react-use-cart";
 
 function Home() {
   const { addItem } = useCart();
@@ -62,9 +63,13 @@ function Home() {
           We make customized art for You and your house and ship to your house
           without any fees.
         </div>
-        <Button className={"button__primary"} name={"Contact Us"} onClick = {() => {
-          
-        }}/>
+        <Button
+          className={"button__primary"}
+          name={"Contact Us"}
+          onClick={() => {
+            <Link to="./contact">\</Link>;
+          }}
+        />
       </div>
       <div
         style={{ width: "100%", height: 1, border: "1px solid #212529" }}
@@ -74,13 +79,13 @@ function Home() {
       </div>
       <div className="artistContainer">
         <div className="image1Container">
-          <img className="image1" src={"images/artist-painting.jpg"} />
+          <img className="image1" alt = "Artist making an beautiful art "src={"images/artist-painting.jpg"} />
         </div>
         <div className="image2Container">
-          <img className="image2" src={"images/painting herself.jpg"} />
+          <img className="image2" alt = "Artist Painting Herself" src={"images/painting herself.jpg"} />
         </div>
         <div className="image3Container">
-          <img className="image3" src={"images/she.jpg"} />
+          <img className="image3" alt = "Artist making an pensil art of  herself that is also painting" src={"images/she.jpg"} />
         </div>
       </div>
       <Newsletter />
