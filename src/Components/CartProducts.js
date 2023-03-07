@@ -4,7 +4,10 @@ import "./CartProducts.css"
 
 function CartProducts() {
   return (
-    <div>CartProducts</div>
+    <div>
+        <img style = {{width: "50vh", height: "40vh"}}src = "images/MatkaFul.jpg"/>
+        <p>A beautiful Art Painting</p>
+    </div>
   )
 }
 

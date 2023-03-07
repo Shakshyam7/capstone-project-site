@@ -1,9 +1,10 @@
 import React from "react";
+import { useState } from "react";
+
 import Card from "./Components/Card/Card";
 import "./Shop.css";
-import shopItems from "./shopItems.json";
-import { useState } from "react";
 import Modal from "./Components/Modal";
+import shopItems from "./shopItems.json";
 
 function Shop() {
   const [showContent, setShowContent] = useState(false);
