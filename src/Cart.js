@@ -16,8 +16,11 @@ function Cart() {
   return (
     <>
     <div className="cartContainer">
+      {items.map((item, index)=>(
+        <CartProducts />
+
+      ))}
     
-      <CartProducts />
 
     </div>
     </>
