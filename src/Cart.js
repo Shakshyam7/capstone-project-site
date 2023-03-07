@@ -40,12 +40,11 @@ function Cart() {
             <div style={{ height: "1px", backgroundColor: "black" }}></div>
           </>
         )}
-        {
-        !isEmpty &&
-        <div className="checkoutButtonContainer">
-          <button className="checkoutButton">Checkout</button>
-        </div>
-        }
+        {!isEmpty && (
+          <div className="checkoutButtonContainer">
+            <button className="checkoutButton">Checkout</button>
+          </div>
+        )}
       </div>
     </>
   );
