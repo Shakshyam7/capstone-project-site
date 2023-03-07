@@ -1,7 +1,7 @@
 import React from "react";
 
 import AppForm from "./Components/AppForm";
-import contact from "./Images/contact.jpg";
+import contact from "./images/contact.jpg";
 
 import "./Contact.css";
 

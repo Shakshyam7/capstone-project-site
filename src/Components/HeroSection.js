@@ -1,11 +1,9 @@
 import React from "react";
-
 import Button from "./Button";
-import heroImage from "./../Images/moon.jpg";
 
 import "./HeroSection.css";
 
-function HeroSection({ text }) {
+function HeroSection({ text, image }) {
   return (
     <>
       <div className="heroContainer">
@@ -15,7 +13,7 @@ function HeroSection({ text }) {
             <Button class={"button__primary"} name={"Explore"} />
           </div>
         </div>
-        <img src={heroImage} alt="Moonlight" width="400" height="300" />
+        <img src={image} alt="Moonlight" width="400" height="300" />
       </div>
     </>
   );

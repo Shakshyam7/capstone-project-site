@@ -1,51 +1,56 @@
 [
     {
-      "image": "./Images/Chill.jpg",
+      "image": "images/african sunset.jpeg",
       "title": "Flower by my side",
       "alt": "Paining of Flower hanging int the Wall",
       "price": "$700",
-      "artist": "Anna Dhakal",
-      "artistImage": "Anna"
+      "artist": "Sunita Dawaddi",
+      "artistImage": "images/Sunita.jpg"
+      
     },
     {
-      "image": "./Images/serenity.jpg",
+      "image": "images/serenity.jpeg",
       "alt": "Paining of Flower hanging int the Wall",
       "title": "Leaves Scattered in Pond",
       "price": "$200",
       "artist": "Sunita Dawadi",
-      "artistImage": "Sunita"
+      "artistImage": "images/Sunita.jpg"
     },
     {
-      "image": "./Images/Chill.jpg",
+      "image": "images/Matkaful.jpg",
       "alt": "Paining of Flower hanging int the Wall",
       "title": "A Quite FullMoon Night",
       "price": "$400",
-      "artist": "Sunita Dawadi",
-      "artistImage": "Sunita"
+      "artist": "Anna Dhakal",
+      "artistImage": "images/Anna.jpg"
+
+
+      
     },
     {
-      "image": "./Images/RedForest.jpeg",
+      "image": "images/RedForest.jpeg",
       "alt": "Paining of Flower hanging int the Wall",
       "title": "Walking by the Red Forest",
       "price": "$300",
       "artist": "Sunita Dawadi",
-      "artistImage": "Sunita"
+      "artistImage": "images/Sunita.jpg"
+      
     },
     {
-      "image": "./Images/hilo.jpg",
+      "image": "images/hilo.jpg",
       "alt": "Paining of Flower hanging int the Wall",
       "title": "Leaves Scattered in Pond",
       "price": "$500",
       "artist": "Anna Dhakal",
-      "artistImage": "Anna"
+      "artistImage": "images/Anna.jpg"
     },
     {
-      "image": "./Images/Chill.jpg",
+      "image": "images/Chill.jpg",
       "alt": "Paining of Flower hanging int the Wall",
       "title": "A Quite FullMoon Night",
       "price": "$190",
-      "artist": "Sunita Dawadi",
-      "artistImage": "Sunita"
+      "artist": "Ivan Oliver",
+      "artistImage": "images/Ivan.jpg"
     }
   ]
   

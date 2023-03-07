@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from "react";
 import "./Modal.css";
 
-import RedForest from "./../Images/RedForest.jpeg";
-import Me from "./../Images/Me.jpg";
+import RedForest from "./../images/RedForest.jpeg";
+import Me from "./../images/Me.jpg";
 import Button from "./Button";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";

@@ -5,9 +5,6 @@ import HeroSection from "./Components/HeroSection";
 import Card from "./Components/Card/Card";
 import Button from "./Components/Button";
 import Modal from "./Components/Modal";
-import ArtistPainting from "./Images/artist-painting.jpg";
-import PaintingHerself from "./Images/painting herself.jpg";
-import She from "./Images/she.jpg";
 import Newsletter from "./Components/Newsletter";
 import cardItems from "./cardItems.json"
 
@@ -27,6 +24,7 @@ function Home() {
         text={
           "Add a touch of Beauty to your Home with our Stunning Pieces of Art."
         }
+        image={"images/moon.jpg"}
       />
       <div className="imgviewContainer">
         <heading className="text">
@@ -70,13 +68,13 @@ function Home() {
       </div>
       <div className="artistContainer">
         <div className="image1Container">
-          <img className="image1" src={ArtistPainting} />
+          <img className="image1" src={"images/artist-painting.jpg"} />
         </div>
         <div className="image2Container">
-          <img className="image2" src={PaintingHerself} />
+          <img className="image2" src={"images/painting herself.jpg"} />
         </div>
         <div className="image3Container">
-          <img className="image3" src={She} />
+          <img className="image3" src={"images/she.jpg"} />
         </div>
       </div>
       <Newsletter />
