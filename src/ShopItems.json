@@ -1,0 +1,56 @@
+[
+    {
+      "id": "1",
+      "image": "images/ful.jpg",
+      "title": "Flower by my side",
+      "alt": "Paining of Flower hanging int the Wall",
+      "price": "$700",
+      "artist": "Anna Dhakal",
+      "artistImage": "images/Anna.jpg"
+    },
+    {
+      "id": "2",
+      "image": "images/serenity.jpeg",
+      "alt": "Paining of Flower hanging int the Wall",
+      "title": "Leaves Scattered in Pond",
+      "price": "$200",
+      "artist": "Sunita Dawadi",
+      "artistImage": "images/Sunita.jpg"
+    },
+    {
+      "id": "3",
+      "image": "images/Matkaful.jpg",
+      "alt": "Paining of Flower hanging int the Wall",
+      "title": "A Quite FullMoon Night",
+      "price": "$400",
+      "artist": "Anna Dhakal",
+      "artistImage": "images/Anna.jpg"
+    },
+    {
+      "id": "4",
+      "image": "images/RedForest.jpeg",
+      "alt": "Paining of Flower hanging int the Wall",
+      "title": "Walking by the Red Forest",
+      "price": "$300",
+      "artist": "Sunita Dawadi",
+      "artistImage": "images/Sunita.jpg"
+    },
+    {
+      "id": "5",
+      "image": "images/hilo.jpg",
+      "alt": "Paining of Flower hanging int the Wall",
+      "title": "Leaves Scattered in Pond",
+      "price": "$500",
+      "artist": "Anna Dhakal",
+      "artistImage": "images/Anna.jpg"
+    },
+    {
+      "id": "6",
+      "image": "images/Chill.jpg",
+      "alt": "Paining of Flower hanging int the Wall",
+      "title": "A Quite FullMoon Night",
+      "price": "$190",
+      "artist": "Ivan Oliver",
+      "artistImage": "images/Ivan.jpg"
+    }
+  ]
