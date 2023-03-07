@@ -1,5 +1,7 @@
 .cartContainer{
     margin-top: 7rem;
+    background-color: rgba(236, 225, 225, 0.1);
+    width: fit-content;
 }
 .emptyPage {
     display: flex;
@@ -9,4 +11,15 @@
 .cartPageTitle{
     font-size: 2rem;
     margin: 24px;
+}
+
+.cartPageItemTitle{
+    font-size: 2rem;
+    margin: 48px;
+    font-weight: 500;
+    justify-content: space-between;
+}
+
+.checkOutButton{
+    
 }

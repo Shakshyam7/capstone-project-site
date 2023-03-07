@@ -6,7 +6,7 @@ import { useCart } from "react-use-cart";
 import Button from "./Components/Button";
 
 function Cart() {
-  const { items, isEmpty, removeItem } = useCart();
+  const { items, isEmpty, totalItems, removeItem } = useCart();
 
   return (
     <>
@@ -15,29 +15,30 @@ function Cart() {
           <>
             <div className="emptyPage">
               <div className="cartPageTitle">Your cart is empty</div>
-                <Button
-                  className={"button__primary"}
-                  name={"Continue Shopping"}
-                />
             </div>
           </>
-        ) : 
-        (<>
+        ) : (
+          <>
+            <div className="cartPageItemTitle">
+              You will have {totalItems} stunning paintings on your wall
+            </div>
+            <Button className={"button__primary"} name={"Continue Shopping"} />
 
-         { items.map((item) => (
-            <CartProducts
-              key={item.id}
-              image={item.image}
-              title={item.title}
-              price={item.price}
-              alt = {item.alt}
-              onClick={() => removeItem(item.id)}
-            />
-          ))
-         }
-        </> )}
-
-        
+            {items.map((item) => (
+              <CartProducts
+                key={item.id}
+                image={item.image}
+                title={item.title}
+                price={item.price}
+                alt={item.alt}
+                onClick={() => removeItem(item.id)}
+              />
+            ))}
+            <div className="checkoutButton">
+              <button >Checkout</button>
+            </div>
+          </>
+        )}
       </div>
     </>
   );

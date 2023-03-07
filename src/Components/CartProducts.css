@@ -1,6 +1,8 @@
 .productsContainer {
     display: flex;
     margin: 48px;
+    width: fit-content;
+    
 }
 
 .productImage{
