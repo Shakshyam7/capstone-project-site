@@ -1,6 +1,10 @@
 .cartContainer{
     margin-top: 7rem;
 }
+.emptyPage {
+    display: flex;
+    align-items:center;
+}
 
 .cartPageTitle{
     font-size: 2rem;
