@@ -61,7 +61,7 @@ function Navbar() {
 
         <div className="nav__cart">
           <Link to="/cart" className="nav__cart-link">
-            Cart
+            Cart(0)
           </Link>
         </div>
       </nav>

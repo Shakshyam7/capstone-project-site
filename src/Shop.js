@@ -8,9 +8,8 @@ import shopItems from "./shopItems.json";
 import { CartProvider, useCart } from "react-use-cart";
 
 function Shop() {
+  const { addItem } = useCart();
 
-  const { addItem} = useCart()
-  
   const [showContent, setShowContent] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const handleClick = (item) => {
@@ -26,7 +25,9 @@ function Shop() {
             image={item.image}
             title={item.title}
             alt={item.alt}
-            onClick={() => handleClick(item)}
+            onClick={() => {
+              handleClick(item);
+            }}
           />
         ))}
         {showContent && (
@@ -37,7 +38,9 @@ function Shop() {
             price={selectedItem.price}
             artist={selectedItem.artist}
             artistImage={selectedItem.artistImage}
-            onClick={() => setShowContent(false)}
+            onClick={() => {setShowContent(false)
+            addItem(selectedItem)
+            }}
           />
         )}
       </div>
