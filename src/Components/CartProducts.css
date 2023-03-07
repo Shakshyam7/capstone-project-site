@@ -2,6 +2,13 @@
     display: flex;
 }
 
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 32px;
+}
 .productTitle{
     font-size: 2rem;
 }
+

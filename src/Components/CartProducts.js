@@ -1,18 +1,24 @@
-import React from 'react'
+import React from "react";
 
-import "./CartProducts.css"
-import Button from './Button'
+import "./CartProducts.css";
+import Button from "./Button";
 
 function CartProducts() {
   return (
-    <div className='productsContainer'>
-        <img style = {{width: "50vh", height: "40vh"}}src = "images/MatkaFul.jpg"/>
-        <div className='productTitle'>
-        <p className='productTitle'>A beautiful Art Painting</p>
+    <div className="productsContainer">
+      <img
+        style={{ width: "50vh", height: "40vh" }}
+        src="images/MatkaFul.jpg"
+      />
+      <div className="infoContainer">
+        <div className="productTitle">A Beautiful Art Painting</div>
+        <div className="button">
+        <div>Price: $299</div>
+          <Button class="button__text" name="Remove Item" />
         </div>
-        <Button class = "button__text" name = "Remove Item"/>
+      </div>
     </div>
-  )
+  );
 }
 
-export default CartProducts
+export default CartProducts;
