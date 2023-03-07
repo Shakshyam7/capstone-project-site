@@ -5,9 +5,12 @@ import Card from "./Components/Card/Card";
 import "./Shop.css";
 import Modal from "./Components/Modal";
 import shopItems from "./shopItems.json";
-
+import { CartProvider, useCart } from "react-use-cart";
 
 function Shop() {
+
+  const { addItem} = useCart()
+  
   const [showContent, setShowContent] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const handleClick = (item) => {
