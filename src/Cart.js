@@ -1,79 +1,14 @@
-import React from 'react'
-import { CartProvider, useCart } from "react-use-cart";
-import "./Cart.css"
+import React from "react";
+import "./Cart.css";
 
 function Cart() {
-  const { addItem } = useCart();
+  return 
+  <>
+  <div className="cartContainer">
+    <CartProducts />
 
-  const products = [
-    {
-      id: 1,
-      name: "Malm",
-      price: 9900,
-      quantity: 1
-    },
-    {
-      id: 2,
-      name: "Nordli",
-      price: 16500,
-      quantity: 5
-    },
-    {
-      id: 3,
-      name: "Kullen",
-      price: 4500,
-      quantity: 1
-    },
-  ];
-
-  return (
-    <div className='cartContainer'>
-      {products.map((p) => (
-        <div key={p.id}>
-          <button onClick={() => addItem(p)}>Add to cart</button>
-        </div>
-      ))}
-    </div>
-  );
+  </div>
+  </>;
 }
 
-
-function SCart() {
-  const {
-    isEmpty,
-    totalUniqueItems,
-    items,
-    updateItemQuantity,
-    removeItem,
-  } = useCart();
-
-  if (isEmpty) return <p>Your cart is empty</p>;
-
-  return (
-    <>
-      <h1>Cart ({totalUniqueItems})</h1>
-
-      <ul>
-        {items.map((item) => (
-          <li key={item.id}>
-            {item.quantity} x {item.name} &mdash;
-            <button
-              onClick={() => updateItemQuantity(item.id, item.quantity - 1)}
-            >
-              -
-            </button>
-            <button
-              onClick={() => updateItemQuantity(item.id, item.quantity + 1)}
-            >
-              +
-            </button>
-            <button onClick={() => removeItem(item.id)}>&times;</button>
-          </li>
-        ))}
-      </ul>
-    </>
-  );
-}
-
-
-export default Cart
+export default Cart;
