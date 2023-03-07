@@ -5,7 +5,7 @@ import Card from "./Components/Card/Card";
 import "./Shop.css";
 import Modal from "./Components/Modal";
 import shopItems from "./shopItems.json";
-import { CartProvider, useCart } from "react-use-cart";
+import { useCart } from "react-use-cart";
 
 function Shop() {
   const { addItem } = useCart();
@@ -18,8 +18,8 @@ function Shop() {
   };
   return (
     <>
+      <div className = "shopPageTitle">Browse Gorgeous Arts from our Collection.</div>
       <div className="shopContainer">
-        <div></div>
         {shopItems.map((item, index) => (
           <Card
             key={index}
