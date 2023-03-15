@@ -1,0 +1,60 @@
+.topContainer{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 56px;
+}
+
+.rectangleColorContainer{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.rectangle {
+    height: 150px;
+    width: 150px;
+    text-align: center;  
+}
+
+.rectangle1 {
+    background-color: rgba(0, 0, 0, 0.38);
+    
+}
+
+.rectangle2 {
+    background-color: rgba(0, 0, 0, 0.60);
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.rectangle3 {
+    background-color: rgba(0, 0, 0, 0.87);
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.rectangle4{
+    background-color: rgba(255, 255, 255, 0.38);
+}
+.rectangle5{
+    background-color: rgba(255, 255, 255, 0.60);
+   
+}
+.rectangle6{
+    background-color: rgba(255, 255, 255, 0.87);
+        
+}
+.rectangle7{
+    background-color: rgba(209, 81, 111, 0.60);
+    
+}
+.rectangle8{
+    background-color: rgba(209, 81, 111, 0.80);
+
+}
+.rectangle9{
+    background-color: #D1516F;
+
+}

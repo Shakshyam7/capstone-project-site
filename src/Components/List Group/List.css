@@ -1,0 +1,22 @@
+.unorderList {
+    display: block;
+    width: 100%;
+    list-style-type: square;
+}
+
+.unorderList__item {
+    margin: 12px;
+}
+
+
+
+.orderList {
+    display: block;
+    width: 100%;
+    list-style-type: lower-roman;
+}
+
+
+.orderList__item {
+    margin: 12px;
+}

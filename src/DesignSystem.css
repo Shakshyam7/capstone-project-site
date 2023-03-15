@@ -1,0 +1,141 @@
+.homepageContainer {
+    display: flex;    
+    height: 100%;
+
+}
+
+.homepageSidebarContainer {
+    position: fixed;
+    margin-top: 5rem;
+    height: 100%;
+    z-index: 2;
+}
+
+.homepageContent {
+    margin-top: 5rem;
+    border: 1px solid black;
+    overflow-x: hidden; 
+    position: fixed; 
+    top: 0;
+    left: 200px;
+    bottom: 0;
+    right: 0;
+
+}
+
+
+
+.button__container{
+    display: inline-block;
+    margin: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    border: none;
+    flex-wrap: wrap;
+}
+
+.typeContainer {
+    padding: 56px
+}
+
+.divContainer {
+    display: flex;
+    margin: 56px;
+    gap: 8px;
+    flex-wrap: wrap;
+       
+}
+
+.heading {
+    margin : 48px 0px 0px 48px
+}
+
+.button__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    margin: 24px 48px;
+}
+
+.componentContainer{
+    display: inline-block;
+    margin: 24px 0px 24px 56px;
+}
+
+.formContainer{
+    margin: 56px;
+}
+
+.homeTextfieldContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 24px 0px 24px 56px;
+}
+
+.homeColorContainer{
+    background-color: rgba(235, 235, 235, 1);
+    padding: 24px 56px;
+}
+.sidebarDisplayButton{
+    display: none;
+}
+
+
+@media screen and (max-width : 576px){ 
+   
+    
+    .homepageContent{
+        left: 0;
+        width: 100%;
+        margin-top: 3rem;
+    }
+    .homepageSidebarContainer{
+        display: none;
+    }
+
+    
+    .mobileSidebar{
+        display: flex;
+        margin-top: 5rem;
+        z-index: 2;
+    }
+    .typeContainer{
+        padding: 0px 24px;
+    }
+    .divContainer {
+        display: flex;
+        margin: 8px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .formContainer{
+        margin: 8px;
+    }
+    .button__container{
+        margin: 24px 8px;
+        gap: 24px;
+    }
+    .homeColorContainer{
+        padding: 8px;
+    }
+    .sidebarDisplayButton{
+        display: flex;
+        position: fixed;
+        top: 5rem;
+        left: 0;
+        background-color: #bb5564d6 ;
+        z-index: 5;
+        border-radius: 0px 0px 200px 0px;
+        padding: 8px 12px 16px 8px;
+        border: none;
+        font-size: 2rem;
+        color: black;     
+    }
+}
+

@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import Card from "./Components/Card/Card";
 import "./Shop.css";
-import Modal from "./Components/Modal";
+import Modal from "./Components/Modal/Modal";
 import shopItems from "./shopItems.json";
 import { useCart } from "react-use-cart";
 

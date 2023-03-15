@@ -1,0 +1,11 @@
+.breadcrumbs__container {
+    display: flex
+}
+
+.breadcrumbs__list {
+
+    list-style-type: none;
+}
+.breadCrumps__item {
+    display: inline;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 
-import AppForm from "./Components/AppForm";
+import AppForm from "./Components/Form/Form";
 
 import "./Contact.css";
 
@@ -11,7 +11,7 @@ function Contact() {
         <img
           src={"images/contact.jpg"}
           width="50%"
-          alt="A lady answering calls and emails "
+          alt="A lady answering calls and emails."
         />
       </div>
       <div className="appFormContainer">
@@ -19,7 +19,6 @@ function Contact() {
           <cont className="cont">Contact Us</cont>
           <p className="para"> We would love to speak with you. </p>
           <p className="para">
-            {" "}
             Feel free to reach out using the below details.
           </p>
           <p className="tit">Get In touch</p>

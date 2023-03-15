@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Cart.css";
 
-import CartProducts from "./Components/CartProducts";
+import CartProducts from "./Components/CartProducts/CartProducts";
 import { useCart } from "react-use-cart";
-import Button from "./Components/Button";
+import Button from "./Components/Buttons/Button";
 
 function Cart() {
   const { items, isEmpty, totalItems, removeItem } = useCart();
@@ -15,10 +16,12 @@ function Cart() {
           <>
             <div className="emptyPage">
               <div className="cartPageTitle">Your cart is empty!</div>
+              <Link to="/shop">
               <Button
                 className={"button__primary"}
                 name={"Continue Shopping"}
               />
+              </Link>
             </div>
           </>
         ) : (

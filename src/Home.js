@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./Home.css";
-import HeroSection from "./Components/HeroSection";
+
+import HeroSection from "./Components/HeroSection/HeroSection";
+import Button from "./Components/Buttons/Button";
 import Card from "./Components/Card/Card";
-import Button from "./Components/Button";
-import Modal from "./Components/Modal";
-import Newsletter from "./Components/Newsletter";
+import Modal from "./Components/Modal/Modal";
+import Newsletter from "./Components/Newsletter/Newsletter";
 import cardItems from "./cardItems.json";
 import { useCart } from "react-use-cart";
 

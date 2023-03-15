@@ -1,0 +1,47 @@
+.form__container{
+    background: linear-gradient(to bottom, #d78799, rgba(245, 245, 245));
+    padding: 32px;
+    width: fit-content;
+}
+.form__header {
+    margin: 56px;   
+}
+
+.formtext{
+    font-size: 1rem;
+    color: rgb(0, 0, 0, 0.7);
+}
+.formTextInputContainer{
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+}
+.form__text1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+} 
+
+
+.label__textarea{
+    height: 5rem;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.label__textarea:focus{
+    border: 2px solid rgb(0, 0, 0, 0.60);
+    outline: none;
+
+}
+
+
+.button__send{
+    margin:  24px;
+    text-align: center;
+
+}
+
