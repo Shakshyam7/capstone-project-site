@@ -1,23 +1,25 @@
 .cartContainer{
-    margin-top: 7rem;
+    margin: 7rem 24px 24px 24px;
+
     background-color: rgba(236, 225, 225, 0.1);
+    
+    
 }
 .emptyPage {
     display: flex;
     align-items:center;
     justify-content: center;
+    gap: 48px;
 }
 
 .cartPageTitle{
     font-size: 2rem;
-    margin: 24px;
+    margin: 24px 0px;
 }
 
 .cartPageItemTitle{
     font-size: 2rem;
-    margin: 48px;
     font-weight: 500;
-    justify-content: space-between;
 }
 
 .checkoutButtonContainer{
@@ -41,5 +43,16 @@
     transform: translateX(2px);
     color: black;
     background-color:rgba(255, 255, 255, 0.87) 
+}
+
+@media screen and (max-width: 600px) {
+    .cartContainer{
+        margin: 7rem 12px 48px 12px;
+        background-color: rgba(236, 225, 225, 0.1); 
+    }
+    .cartPageItemTitle{
+text-align: center;
+    
+    } 
 }
 

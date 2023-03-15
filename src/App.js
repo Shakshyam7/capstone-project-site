@@ -21,7 +21,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
-          <Footer />
+         { !{path = "/"} && <Footer />}
         </Router>
       </CartProvider>
     </>

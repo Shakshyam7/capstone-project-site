@@ -4,11 +4,33 @@
     border-radius: 4px;
     margin: 16px;
     width: 320px;
-    height: 380px;
+    height: 400px;
     
 }
+.wishlist__logo{
+    display: none;
+}
+.title {
+    display: none;
+}
 
-.wishlist__logo {
+.card__image {
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    height: 400px;
+
+}
+
+.card__image:hover {
+    mix-blend-mode: normal;
+    transform: scale(1.2);
+}
+
+.card__container:hover .wishlist__logo {
+    display: block;
     position: absolute;
     background-color: rgb(255, 255, 255, 0.87);
     top: 12px;
@@ -18,24 +40,12 @@
     padding: 12px 12px 4px 12px ;
     border-radius: 8px;
     cursor: pointer;
+
 }
 
-.card__image {
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-    width: 100%;
-    height: 380px;
-}
-
-.card__image:hover {
-    mix-blend-mode: normal;
-    transform: scale(1.2);
-}
-
-.title {
-    font-size: 1 rem;
+.card__container:hover .title {
+    display: flex;
+    font-size: 1.2rem;
     font-weight: 600;
     color: rgb(255, 255, 255, 0.87);
     margin-bottom: 8px;
@@ -43,4 +53,5 @@
     bottom: 8px;
     left: 24px;
     justify-self: center;
+
 }
