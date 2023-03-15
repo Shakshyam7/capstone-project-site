@@ -12,19 +12,16 @@ function Card({image, alt, title, onClick }) {
         <img className="card__image"
           src={image}
           alt={alt}
-          width=" 300px"
-          height="378px"
           onMouseEnter={() => handleHover()}
           onMouseLeave={() => handleHover()}
         />
-        {isHovered && (
+        
           <div className="wishlist__logo">
             <MdFavoriteBorder />
           </div>
-        )}
-         {isHovered && (
+        
           <p className="title">{title}</p>
-          )} 
+          
       </div>
     </>
   );

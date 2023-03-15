@@ -9,6 +9,11 @@
     margin-bottom: 56px;
 }
 
+.colorTitle{
+  font-size: 1rem;
+  margin: 8px 0px;
+}
+
 .rectangleColorContainer{
     display: flex;
     gap: 24px;
