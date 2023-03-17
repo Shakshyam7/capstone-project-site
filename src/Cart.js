@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Cart.css";
 
 import CartProducts from "./Components/CartProducts/CartProducts";
+import Footer from "./Components/Footer/Footer";
 import { useCart } from "react-use-cart";
 import Button from "./Components/Buttons/Button";
 
@@ -48,6 +49,9 @@ function Cart() {
             <button className="checkoutButton">Checkout</button>
           </div>
         )}
+      </div>
+      <div className="homeFooterContainer">
+        <Footer />
       </div>
     </>
   );

@@ -29,7 +29,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 50%;
+    max-width: 100%;
+    text-align: center;
+    margin-left: 72px;
+}
+.heroImageContainer img{
+    align-self: center;
+
 }
 
    
@@ -58,6 +64,7 @@
     .heroImageContainer {
         display: flex;
         max-width: 100%;
+        margin-left: 0px;
         padding: 0px 12px;
     }
     

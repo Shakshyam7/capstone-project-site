@@ -1,6 +1,7 @@
 import React from "react";
 
 import AppForm from "./Components/Form/Form";
+import Footer from "./Components/Footer/Footer";
 
 import "./Contact.css";
 
@@ -26,6 +27,9 @@ function Contact() {
         </div>
 
         <AppForm />
+      </div>
+      <div className="homeFooterContainer">
+        <Footer />
       </div>
     </>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 import Card from "./Components/Card/Card";
+import Footer from "./Components/Footer/Footer";
 import "./Shop.css";
 import Modal from "./Components/Modal/Modal";
 import shopItems from "./shopItems.json";
@@ -46,6 +47,9 @@ function Shop() {
             }}
           />
         )}
+      </div>
+      <div className="homeFooterContainer">
+        <Footer />
       </div>
     </>
   );

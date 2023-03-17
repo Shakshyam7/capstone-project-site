@@ -6,6 +6,7 @@ import "./Home.css";
 import HeroSection from "./Components/HeroSection/HeroSection";
 import Button from "./Components/Buttons/Button";
 import Card from "./Components/Card/Card";
+import Footer from "./Components/Footer/Footer";
 import Modal from "./Components/Modal/Modal";
 import Newsletter from "./Components/Newsletter/Newsletter";
 import cardItems from "./cardItems.json";
@@ -104,6 +105,9 @@ function Home() {
         </div>
       </div>
       <Newsletter />
+      <div className="homeFooterContainer">
+        <Footer />
+      </div>
     </div>
   );
 }
