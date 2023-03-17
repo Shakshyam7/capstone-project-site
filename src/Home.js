@@ -35,7 +35,7 @@ function Home() {
         <heading className="text">
           Explore Arts from Creative and talented Artists
         </heading>
-        <div className="cardContainer">
+        <div className="homeCardContainer">
           {cardItems.map((item, index) => (
             <Card
               key={index}

@@ -25,11 +25,11 @@
     background-color: #EEEEEE;
     padding: 24px 0px;
 }
-.cardContainer{
-    margin: 48px ;
+.homeCardContainer{
+    
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
