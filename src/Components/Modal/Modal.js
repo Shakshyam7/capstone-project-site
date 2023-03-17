@@ -29,7 +29,7 @@ function Modal({ image, title, alt, price, artist, artistImage, onClick }) {
                 </div>
                 <div className="profileNameContainer">
                   <p className="profileName">{artist}</p>
-                  <p className="profileFollow">Follow</p>
+                  <Button className = {"button__text"} name={"Follow"}/>
                 </div>
               </div>
             </div>

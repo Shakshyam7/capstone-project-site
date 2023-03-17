@@ -100,7 +100,7 @@
 
 }
 
-@media screen and (max-width: 500px)  {
+@media screen and (max-width: 840px)  {
  
   .modalItemsContainer {
     display: flex;
@@ -111,14 +111,16 @@
     background-color: #EEEEEE;
     position: relative;
     margin: 25% 0% 0% 0%;
-    padding: 48px 12px 0px 12px;
+    padding: 48px 100px 0px 50px;
     height: 100%;
     width: 100%; 
+   
 
   }
 .image-profileContainer {
   flex: 1;
-  width: 90%;
+  width: 70%;
+  text-align: center;
   
 }
 .profileContainer {
@@ -146,3 +148,19 @@
 }
 }
 
+@media screen and (max-width: 500px)  {
+  .modalContainer {
+    background-color: #EEEEEE;
+    position: relative;
+    margin: 25% 0% 0% 0%;
+    padding: 48px 12px 0px 12px;
+    height: 100%;
+    width: 100%; 
+
+  }
+  .image-profileContainer {
+    flex: 1;
+    width: 100%;
+  }
+ 
+}
