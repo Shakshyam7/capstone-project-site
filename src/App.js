@@ -1,4 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 import DesignSystem from "./DesignSystem";
 import Home from "./Home";
 import Shop from "./Shop";
@@ -9,6 +13,7 @@ import { CartProvider } from "react-use-cart";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
+ 
   return (
     <>
       <CartProvider>
@@ -21,7 +26,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
-         { !{path = "/"} && <Footer />}
         </Router>
       </CartProvider>
     </>

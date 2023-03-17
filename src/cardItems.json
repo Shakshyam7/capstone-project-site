@@ -2,7 +2,7 @@
   {
     "id": "1",
     "image": "images/ful.jpg",
-    "title": "Flower by my side",
+    "title": "Flower by My Side",
     "alt": "Paining of Flower hanging int the Wall",
     "price": "$700",
     "artist": "Anna Dhakal",
@@ -20,7 +20,7 @@
   {
     "id": "3",
     "image": "images/Matkaful.jpg",
-    "alt": "Paining of Flower hanging int the Wall",
+    "alt": "Paining of Flower hanging in the Wall",
     "title": "A Quite FullMoon Night",
     "price": "$400",
     "artist": "Anna Dhakal",

@@ -35,6 +35,7 @@ import themeCode from "./Components/Colors/colorSnippet.js";
 import Footer from "./Components/Footer/Footer.js";
 import Sidebar from "./Components/Sidebar.js/Sidebar.js";
 import { BiMenuAltLeft } from "react-icons/bi";
+import Navbar from "./Components/Navbar/Navbar.js";
 
 function Home() {
   const [click, setClick] = useState(false);
@@ -51,25 +52,27 @@ function Home() {
               <BiMenuAltLeft className="sidebutton" />
             </button>
           )}
-          {click && (
-            <Sidebar
-              sidebarItems={[
-                "Colors",
-                "Typography",
-                "Buttons",
-                "Textfield",
-                "Card",
-                "BreadCrumbs",
-                "List",
-                "Checkbox/Radio",
-                "HeroSection",
-                "Form",
-                "Footer",
-              ]}
-              onClick={() => setClick(false)}
-            />
-          )}
         </div>
+          {click && (
+            <div className="mobileSidebarContainer">
+              <Sidebar
+                sidebarItems={[
+                  "Colors",
+                  "Typography",
+                  "Buttons",
+                  "Textfield",
+                  "Card",
+                  "BreadCrumbs",
+                  "List",
+                  "Checkbox/Radio",
+                  "HeroSection",
+                  "Form",
+                  "Footer",
+                ]}
+                onClick={() => setClick(false)}
+              />
+            </div>
+          )}
 
         <div className="homepageSidebarContainer">
           <Sidebar
@@ -219,6 +222,7 @@ function Home() {
             <CodeSnippet code={listCode} codeLanguage={"React"} />
             <CodeSnippet code={listCSS} codeLanguage={"CSS "} />
           </div>
+          <Navbar />
           <h2 className="heading" id="herosection">
             HeroSection
           </h2>

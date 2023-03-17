@@ -2,7 +2,7 @@
     {
       "id": "1",
       "image": "images/ful.jpg",
-      "title": "Flower by my side",
+      "title": "Flower by My Side",
       "alt": "Painting of Flower hanging int the Wall",
       "price": "$700",
       "artist": "Anna Dhakal",
@@ -21,7 +21,7 @@
       "id": "3",
       "image": "images/Matkaful.jpg",
       "alt": "Paining of Flower hanging in the Wall",
-      "title": "",
+      "title": "Matka",
       "price": "$400",
       "artist": "Anna Dhakal",
       "artistImage": "images/Anna.jpg"
@@ -102,7 +102,7 @@
         "id": "12",
         "image": "images/AkashmaChill.jpg",
         "alt": "Painting of birds flying in the sky of beautiful valley",
-        "title": "Birds Flying over a beautiful valley",
+        "title": "Birds Flying Over a Beautiful Valley",
         "price": "$190",
         "artist": "Ivan Oliver",
         "artistImage": "images/Ivan.jpg"

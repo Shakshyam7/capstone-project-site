@@ -105,6 +105,12 @@
         margin-top: 5rem;
         z-index: 2;
     }
+    .mobileSidebarContainer{
+        position: fixed;
+        margin-top: 5rem;
+        height: 100%;
+        z-index: 2;
+    }
     .typeContainer{
         padding: 0px 24px;
     }
