@@ -19,10 +19,13 @@
 .socialIcons{
     display: flex;
     gap: 32px;
-    color: rgb(255, 255, 255, 0.87);
+    color: rgb(255, 255, 255, 0.7);
     font-size: 2rem;
     cursor: pointer;
 
+}
+.icon:hover{
+    color: rgb(255, 255, 255, 0.87);
 }
 .copyrightText{
     color: rgb(255, 255, 255, 0.87);

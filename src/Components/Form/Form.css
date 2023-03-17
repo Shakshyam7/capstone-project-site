@@ -4,11 +4,11 @@
     width: fit-content;
 }
 .form__header {
-    margin: 56px;   
+    margin: 56px; 
 }
 
 .formtext{
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: rgb(0, 0, 0, 0.7);
 }
 .formTextInputContainer{

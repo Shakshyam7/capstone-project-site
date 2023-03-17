@@ -75,13 +75,13 @@
 
 
 .nav__menu-link:hover {
-  color:rgb(255, 255, 255, 87);
+  color:rgb(255, 255, 255, 0.87);
   text-decoration: none;
 }
 
 .nav__menu-link:focus {
   color: rgb(255, 255, 255, 0.87);
-  border-bottom: 2px solid rgb(255, 255, 255, 87);
+  border-bottom: 2px solid rgb(255, 255, 255, 0.87);
   text-decoration: none;
 }
 

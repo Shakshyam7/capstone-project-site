@@ -9,9 +9,15 @@ function Footer() {
       <div className="footerContainer">
         <div className="footerLogo">ArtShop</div>
         <div className="socialIcons">
-          <FaFacebook />
-          <FaInstagram />
-          <FaTwitter />
+          <div className="icon">
+            <FaFacebook />
+          </div>
+          <div className="icon">
+            <FaInstagram />
+          </div>
+          <div className="icon">
+            <FaTwitter />
+          </div>
         </div>
         <div className="copyrightText">
           copyright &copy; {new Date().getFullYear()}-ArtShop. All rights
