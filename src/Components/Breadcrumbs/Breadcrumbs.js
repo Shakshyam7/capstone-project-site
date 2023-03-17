@@ -11,7 +11,7 @@ function Breadcrumbs() {
         <span> {">"} </span>
         <Link to="#"><li className="breadCrumps__item">Contact</li></Link>
         <span> {">"} </span>
-        <Link to="#"><li className="breadCrumps__item">Shop</li></Link>
+        <Link to="/shop"><li className="breadCrumps__item">Shop</li></Link>
       </ul>
     </div>
   );

@@ -3,9 +3,17 @@
 }
 
 .breadcrumbs__list {
-
     list-style-type: none;
+    color: #d1516f;  
+
+}
+.breadcrumbs__list a {
+
+    text-decoration: none;
+
 }
 .breadCrumps__item {
     display: inline;
+    color: #d1516f;   
+
 }

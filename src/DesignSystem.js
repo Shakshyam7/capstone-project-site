@@ -16,13 +16,14 @@ import { UnorderList, OrderList } from "./Components/List Group/List.js";
 
 import CodeSnippet from "./CodeSnippet.js";
 import { cardCode, cardCSS } from "./Components/Card/CardSnippet.js";
-import {modalCode, modalCSS} from "./Components/Modal/modalSnippet"
+import { modalCode, modalCSS } from "./Components/Modal/modalSnippet";
 import { formCode, formCSS } from "./Components/Form/FormSnippet.js";
 import {
   heroSectionCode,
   heroSectionCSS,
 } from "./Components/HeroSection/HeroSectionSnippet.js";
 import { buttonCode, buttonCSS } from "./Components/Buttons/ButtonSnippet.js";
+import { navbarCode, navbarCSS } from "./Components/Navbar/NavbarSnippet.js";
 import {
   textfieldCode,
   textfieldCSS,
@@ -34,6 +35,7 @@ import {
 } from "./Components/SelectionBox/SelectionBoxSnippet.js";
 import themeCode from "./Components/Colors/colorSnippet.js";
 import Footer from "./Components/Footer/Footer.js";
+import { footerCode, footerCSS } from "./Components/Footer/FooterSnippet.js";
 import Sidebar from "./Components/Sidebar.js/Sidebar.js";
 import Modal from "./Components/Modal/Modal.js";
 import { BiMenuAltLeft } from "react-icons/bi";
@@ -69,6 +71,7 @@ function Home() {
           <div className="mobileSidebarContainer">
             <Sidebar
               sidebarItems={[
+                "Navbar",
                 "Colors",
                 "Typography",
                 "Buttons",
@@ -90,6 +93,7 @@ function Home() {
         <div className="homepageSidebarContainer">
           <Sidebar
             sidebarItems={[
+              "Navbar",
               "Colors",
               "Typography",
               "Buttons",
@@ -106,6 +110,13 @@ function Home() {
           />
         </div>
         <div className="homepageContent">
+          <h2 className="heading" id="navbar">
+            Navbar
+          </h2>
+          <div className="divContainer">
+            <CodeSnippet code={navbarCode} codeLanguage={"React"} />
+            <CodeSnippet code={navbarCSS} codeLanguage={"React"} />
+          </div>
           <h2 className="heading" id="colors">
             Colors
           </h2>
@@ -215,7 +226,7 @@ function Home() {
               onClick={() => setDisplayModal(true)}
             />
           </div>
-            <div className="divContainer">
+          <div className="divContainer">
             <CodeSnippet code={modalCode} codeLanguage={"React"} />
             <CodeSnippet code={modalCSS} codeLanguage={"CSS "} />
             {displayModal && (
@@ -276,7 +287,14 @@ function Home() {
             <CodeSnippet code={heroSectionCode} codeLanguage={"React"} />
             <CodeSnippet code={heroSectionCSS} codeLanguage={"CSS "} />
           </div>
-          <div id="footer">
+          <h2 className="heading" id="footer">
+            Footer
+          </h2>
+          <div className="divContainer">
+            <CodeSnippet code={footerCode} codeLanguage={"React"} />
+            <CodeSnippet code={footerCSS} codeLanguage={"CSS "} />
+          </div>
+          <div>
             <Footer />
           </div>
         </div>
