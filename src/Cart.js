@@ -8,7 +8,7 @@ import { useCart } from "react-use-cart";
 import Button from "./Components/Buttons/Button";
 
 function Cart() {
-  const { items, isEmpty, totalItems, removeItem } = useCart();
+  const { items, isEmpty, removeItem } = useCart();
 
   return (
     <>
@@ -18,17 +18,17 @@ function Cart() {
             <div className="emptyPage">
               <div className="cartPageTitle">Your cart is empty!</div>
               <Link to="/shop">
-              <Button
-                className={"button__primary"}
-                name={"Continue Shopping"}
-              />
+                <Button
+                  className={"button__primary"}
+                  name={"Continue Shopping"}
+                />
               </Link>
             </div>
           </>
         ) : (
           <>
             <div className="cartPageItemTitle">
-              Add {totalItems} Stunning Art to your Collection.
+              Add Stunning Art to your Collection.
             </div>
 
             {items.map((item) => (

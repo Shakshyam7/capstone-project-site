@@ -34,6 +34,7 @@ import {
 import themeCode from "./Components/Colors/colorSnippet.js";
 import Footer from "./Components/Footer/Footer.js";
 import Sidebar from "./Components/Sidebar.js/Sidebar.js";
+import Modal from "./Components/Modal/Modal.js";
 import { BiMenuAltLeft } from "react-icons/bi";
 
 function Home() {
@@ -52,26 +53,27 @@ function Home() {
             </button>
           )}
         </div>
-          {click && (
-            <div className="mobileSidebarContainer">
-              <Sidebar
-                sidebarItems={[
-                  "Colors",
-                  "Typography",
-                  "Buttons",
-                  "Textfield",
-                  "Card",
-                  "BreadCrumbs",
-                  "List",
-                  "Checkbox/Radio",
-                  "HeroSection",
-                  "Form",
-                  "Footer",
-                ]}
-                onClick={() => setClick(false)}
-              />
-            </div>
-          )}
+        {click && (
+          <div className="mobileSidebarContainer">
+            <Sidebar
+              sidebarItems={[
+                "Colors",
+                "Typography",
+                "Buttons",
+                "Textfield",
+                "BreadCrumbs",
+                "List",
+                "Checkbox/Radio",
+                "Card",
+                "Modal",
+                "HeroSection",
+                "Form",
+                "Footer",
+              ]}
+              onClick={() => setClick(false)}
+            />
+          </div>
+        )}
 
         <div className="homepageSidebarContainer">
           <Sidebar
@@ -80,10 +82,11 @@ function Home() {
               "Typography",
               "Buttons",
               "Textfield",
-              "Card",
               "BreadCrumbs",
               "List",
               "Checkbox/Radio",
+              "Card",
+              "Modal",
               "HeroSection",
               "Form",
               "Footer",
@@ -188,6 +191,15 @@ function Home() {
           <div className="divContainer">
             <CodeSnippet code={cardCode} codeLanguage={"React"} />
             <CodeSnippet code={cardCSS} codeLanguage={"CSS "} />
+          </div>
+          <h2 className="heading" id="card">
+            Modal
+          </h2>
+          <div >
+            <Button name = "Display Modal" className={"button__primary"}/>
+            { click && <div className="dmodalContainer">
+            <Modal />
+          </div>}
           </div>
 
           <h2 className="heading" id="form">

@@ -1,6 +1,7 @@
 .sidebarContainer{
     width: 200px;
     height: 100%;
+    overflow: scroll;
     background-color: black;
     
 }
