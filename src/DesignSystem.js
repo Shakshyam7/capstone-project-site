@@ -37,9 +37,19 @@ import Sidebar from "./Components/Sidebar.js/Sidebar.js";
 import Modal from "./Components/Modal/Modal.js";
 import { BiMenuAltLeft } from "react-icons/bi";
 
+const item = {
+  id: "3",
+  image: "images/Matkaful.jpg",
+  alt: "Paining of Flower hanging in the Wall",
+  title: "A Quite FullMoon Night",
+  price: "$400",
+  artist: "Anna Dhakal",
+  artistImage: "images/Anna.jpg",
+};
+
 function Home() {
   const [click, setClick] = useState(false);
-  const [displayModal, setDisplayModal] =useState(false)
+  const [displayModal, setDisplayModal] = useState(false);
   console.log(click);
   return (
     <>
@@ -201,11 +211,18 @@ function Home() {
             <Button
               name="Display Modal"
               className={"button__primary"}
-              onClick={() => setDisplayModal(true)
-              }
+              onClick={() => setDisplayModal(true)}
             />
             {displayModal && (
-              <Modal onClick={() => setDisplayModal(false)}/>
+              <Modal
+                image={item.image}
+                title={item.title}
+                alt={item.alt}
+                price={item.price}
+                artist={item.artist}
+                artistImage={item.artistImage}
+                onClick={() => setDisplayModal(false)}
+              />
             )}
           </div>
 
