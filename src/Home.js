@@ -23,12 +23,14 @@ function Home() {
   console.log(showContent);
   return (
     <div className="homeContainer">
-      <HeroSection
-        text={
-          "Add a touch of Beauty to your Home with our Stunning Pieces of Art."
-        }
-        image={"images/moon.jpg"}
-      />
+      <div className="herosectionContainer">
+        <HeroSection
+          text={
+            "Add a touch of Beauty to your Home with our Stunning Pieces of Art."
+          }
+          image={"images/moon.jpg"}
+        />
+      </div>
       <div className="imgviewContainer">
         <heading className="text">
           Explore Arts from Creative and talented Artists

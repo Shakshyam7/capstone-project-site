@@ -93,7 +93,7 @@
     .homepageContent{
         left: 0;
         width: 100%;
-        margin-top: 3rem;
+        margin-top: 5rem;
     }
     .homepageSidebarContainer{
         display: none;
@@ -119,6 +119,7 @@
         margin: 8px;
         width: 100%;
         flex-direction: column;
+        overflow-x: scroll;
     }
     .formContainer{
         margin: 8px;

@@ -20,6 +20,7 @@
   align-items: center;
   position: fixed;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .nav__logo {

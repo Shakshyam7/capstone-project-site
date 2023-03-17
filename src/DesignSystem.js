@@ -35,7 +35,6 @@ import themeCode from "./Components/Colors/colorSnippet.js";
 import Footer from "./Components/Footer/Footer.js";
 import Sidebar from "./Components/Sidebar.js/Sidebar.js";
 import { BiMenuAltLeft } from "react-icons/bi";
-import Navbar from "./Components/Navbar/Navbar.js";
 
 function Home() {
   const [click, setClick] = useState(false);
@@ -222,7 +221,6 @@ function Home() {
             <CodeSnippet code={listCode} codeLanguage={"React"} />
             <CodeSnippet code={listCSS} codeLanguage={"CSS "} />
           </div>
-          <Navbar />
           <h2 className="heading" id="herosection">
             HeroSection
           </h2>

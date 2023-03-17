@@ -7,6 +7,7 @@ export default function CodeSnippet(props) {
         height: "80vh",
         padding: "16px",
         overflow: "scroll",
+
       }}
     >
       <span style={{ color: "rgba(209, 81, 111, 0.87)" }}>

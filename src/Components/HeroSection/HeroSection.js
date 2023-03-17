@@ -9,9 +9,14 @@ function HeroSection(props) {
       <div className="heroContainer">
         <div className="textContainer">
           <h1 className="heroText">{props.text}</h1>
-          <Button className={"button__primary"} name={"Explore"} />
+          <div>
+            <Button className={"button__primary"} name={"Explore"} />
+          </div>
         </div>
+        <div className="heroImageContainer">
+
         <img src={"Images/moon.jpg"} alt="Moonlight" width="400" height="300" />
+        </div>
       </div>
     </>
   );
