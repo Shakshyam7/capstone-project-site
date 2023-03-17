@@ -39,6 +39,7 @@ import { BiMenuAltLeft } from "react-icons/bi";
 
 function Home() {
   const [click, setClick] = useState(false);
+  const [displayModal, setDisplayModal] =useState(false)
   console.log(click);
   return (
     <>
@@ -192,14 +193,20 @@ function Home() {
             <CodeSnippet code={cardCode} codeLanguage={"React"} />
             <CodeSnippet code={cardCSS} codeLanguage={"CSS "} />
           </div>
-          <h2 className="heading" id="card">
+          <h2 className="heading" id="modal">
             Modal
           </h2>
-          <div >
-            <Button name = "Display Modal" className={"button__primary"}/>
-            { click && <div className="dmodalContainer">
-            <Modal />
-          </div>}
+          <div className="buttonModalContainer">
+            <div>Click the button to display the modal.</div>
+            <Button
+              name="Display Modal"
+              className={"button__primary"}
+              onClick={() => setDisplayModal(true)
+              }
+            />
+            {displayModal && (
+              <Modal onClick={() => setDisplayModal(false)}/>
+            )}
           </div>
 
           <h2 className="heading" id="form">
