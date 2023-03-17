@@ -110,7 +110,10 @@
     .mobileSidebar{
         display: flex;
         margin-top: 5rem;
-        z-index: 2;
+        z-index:1;
+    }
+    .dModal{
+        z-index: 7;
     }
     .mobileSidebarContainer{
         position: fixed;

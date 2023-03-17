@@ -16,6 +16,7 @@ import { UnorderList, OrderList } from "./Components/List Group/List.js";
 
 import CodeSnippet from "./CodeSnippet.js";
 import { cardCode, cardCSS } from "./Components/Card/CardSnippet.js";
+import {modalCode, modalCSS} from "./Components/Modal/modalSnippet"
 import { formCode, formCSS } from "./Components/Form/FormSnippet.js";
 import {
   heroSectionCode,
@@ -213,16 +214,22 @@ function Home() {
               className={"button__primary"}
               onClick={() => setDisplayModal(true)}
             />
+          </div>
+            <div className="divContainer">
+            <CodeSnippet code={modalCode} codeLanguage={"React"} />
+            <CodeSnippet code={modalCSS} codeLanguage={"CSS "} />
             {displayModal && (
-              <Modal
-                image={item.image}
-                title={item.title}
-                alt={item.alt}
-                price={item.price}
-                artist={item.artist}
-                artistImage={item.artistImage}
-                onClick={() => setDisplayModal(false)}
-              />
+              <div className="dModal">
+                <Modal
+                  image={item.image}
+                  title={item.title}
+                  alt={item.alt}
+                  price={item.price}
+                  artist={item.artist}
+                  artistImage={item.artistImage}
+                  onClick={() => setDisplayModal(false)}
+                />
+              </div>
             )}
           </div>
 
