@@ -24,7 +24,9 @@ function Modal({ image, title, alt, price, artist, artistImage, onClick }) {
                 alt={alt}
               />
               <div className="profileContainer">
-                <img src={artistImage} className="profileImage"></img>
+                <div className="profileImageContainer">
+                  <img src={artistImage} className="profileImage"></img>
+                </div>
                 <div className="profileNameContainer">
                   <p className="profileName">{artist}</p>
                   <p className="profileFollow">Follow</p>

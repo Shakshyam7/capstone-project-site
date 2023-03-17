@@ -13,7 +13,7 @@
   background-color: #EEEEEE;
   position: relative;
   margin: 10% auto;
-  padding: 80px;
+  padding: 80px 24px 24px 48px;
   width: 80%; 
 
 }
@@ -37,7 +37,6 @@
 .profileContainer {
   display: flex;
   margin-top: 24px;
-  align-items: center;
   width: 80%;
   cursor: pointer;
 
@@ -47,11 +46,9 @@
   width: 70px;
   border-radius: 35px;
 }
+
 .profileNameContainer{
-  display: flex;
-  flex-direction: column;
-  margin-left: 16px;
-  gap: 4px;
+  margin-left: 24px;
 }
 .profileName {
   font-size: 1.2rem;
@@ -62,7 +59,7 @@
 }
 
 .modaltextContainer{
-  flex: 1;
+  flex: 1.2;
 }
 
 .modelTitle {
@@ -72,14 +69,14 @@
 }
 .modelDescription {
   margin-top: 100px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   color:rgba(0, 0, 0, 0.8)
 }
 .buttonsContainer{
   display: flex;
   margin-top: 24px;
-  justify-content: space-between;
+  gap: 56px;
 }
 
 .favButton{
@@ -103,23 +100,49 @@
 
 }
 
-@media screen and (max-width: 900px)  {
+@media screen and (max-width: 500px)  {
+ 
   .modalItemsContainer {
     display: flex;
     flex-direction: column;
+    
   }
-  
+  .modalContainer {
+    background-color: #EEEEEE;
+    position: relative;
+    margin: 25% 0% 0% 0%;
+    padding: 48px 12px 0px 12px;
+    height: 100%;
+    width: 100%; 
+
+  }
 .image-profileContainer {
   flex: 1;
-  width: 80%;
-  align-items: center;
-  justify-content: center;
+  width: 90%;
   
+}
+.profileContainer {
+  width: 100%;
+
 }
   .modalImage {
   width: 100%;
   height:300px;
     
   }
+
+  .modelTitle {
+    margin-top: 24px;
+    font-size: 1.2rem;
+  
+  }
+  .modelDescription {
+    margin-top: 10px;
+  }
+  .buttonsContainer{
+    margin: 24px 0px;
+    justify-content: flex-start;
   
 }
+}
+
