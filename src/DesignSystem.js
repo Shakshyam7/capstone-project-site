@@ -194,10 +194,10 @@ function Home() {
             Checkbox/Radio button
           </h2>
           <div className="componentContainer">
-            <SelectionBox type={"radio"} />
+            <SelectionBox type={"radio"} name = "radio-group"/>
+            <SelectionBox type={"radio"} label={"Radio Button"} name = "radio-group"/>
             <SelectionBox type={"Checkbox"} />
-            <SelectionBox type={"radio"} name={"Radio Button"} />
-            <SelectionBox type={"Checkbox"} name={"Checkbox"} />
+            <SelectionBox type={"Checkbox"} label={"Checkbox"} />
           </div>
           <div className="divContainer">
             <CodeSnippet code={selectionBoxCode} codeLanguage={"React"} />

@@ -14,12 +14,12 @@ function Form() {
               <Textfield
                 name={"label__textfield"}
                 className={"textfield"}
-                placeholder={"Firstname"}
+                placeholder={"First Name"}
               />
               <Textfield
                 name={"label__textfield"}
                 className={"textfield"}
-                placeholder={"Lastname"}
+                placeholder={"Last Name"}
               />
             </div>
             <div className="form__text2">

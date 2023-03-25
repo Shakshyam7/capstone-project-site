@@ -2,12 +2,12 @@ import React from "react";
 
 import "./SelectionBox.css";
 
-function selectionBox(props) {
+function selectionBox({ type, label, name  }) {
   return (
     <>
       <div className="box__container">
-        <input type={props.type} className={"selectionBox"} />
-        <label className={"label"}>{props.name}</label>
+        <input type={type} className={"selectionBox"} name ={name} />
+        <label className={"label"}>{label}</label>
       </div>
     </>
   );

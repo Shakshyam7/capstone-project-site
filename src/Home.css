@@ -24,6 +24,7 @@
 .imgviewContainer {
     background-color: #EEEEEE;
     padding: 24px 0px;
+ 
 }
 .homeCardContainer{
     
@@ -111,5 +112,8 @@
   .image2{
     height: 50vh;
   }  
+  .text{
+    text-align: center;
+  }
   
 }
