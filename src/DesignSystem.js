@@ -61,6 +61,7 @@ function Home() {
           {!click && (
             <button
               className="sidebarDisplayButton"
+              area-label="Display Sidebar"
               onClick={() => setClick(!click)}
             >
               <BiMenuAltLeft className="sidebutton" />
@@ -194,8 +195,12 @@ function Home() {
             Checkbox/Radio button
           </h2>
           <div className="componentContainer">
-            <SelectionBox type={"radio"} name = "radio-group"/>
-            <SelectionBox type={"radio"} label={"Radio Button"} name = "radio-group"/>
+            <SelectionBox type={"radio"} name="radio-group" />
+            <SelectionBox
+              type={"radio"}
+              label={"Radio Button"}
+              name="radio-group"
+            />
             <SelectionBox type={"Checkbox"} />
             <SelectionBox type={"Checkbox"} label={"Checkbox"} />
           </div>
