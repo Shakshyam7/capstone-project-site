@@ -15,7 +15,7 @@ function HeroSection(props) {
         </div>
         <div className="heroImageContainer">
 
-        <img src={"Images/moon.jpg"} alt="Moonlight" width="400" height="300" />
+        <img src={"images/moon.jpg"} alt="Moonlight" width="400" height="300" />
         </div>
       </div>
     </>
