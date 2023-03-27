@@ -54,6 +54,7 @@ function Home() {
               price={selectedItem.price}
               artist={selectedItem.artist}
               artistImage={selectedItem.artistImage}
+              href={selectedItem.href}
               onClick={() => {
                 setShowContent(false);
                 addItem(selectedItem);

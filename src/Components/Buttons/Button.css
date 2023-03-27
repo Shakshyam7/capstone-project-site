@@ -41,14 +41,14 @@
 .button__text {
     padding: 12px 20px;
     border: none;
-    color: rgba(209, 81, 111, 0.87);
+    color:#A80000;
     background-color: transparent;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
 
 .button__text:hover {
-    color: rgba(209, 81, 111, 0.6);
+    color: #A80000;
     transform: translateX(2px);
 
 

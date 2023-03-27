@@ -7,7 +7,16 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { HiOutlineX } from "react-icons/hi";
 
-function Modal({ image, title, alt, price, artist, artistImage, onClick }) {
+function Modal({
+  image,
+  title,
+  alt,
+  price,
+  artist,
+  artistImage,
+  href,
+  onClick,
+}) {
   const [click, setClick] = useState(false);
   return (
     <>
@@ -32,8 +41,14 @@ function Modal({ image, title, alt, price, artist, artistImage, onClick }) {
                   ></img>
                 </div>
                 <div className="profileNameContainer">
-                  <p className="profileName">{artist}</p>
-                  <Button className={"button__text"} name={"Follow"} />
+                  <div>
+                    <p className="profileName">{artist}</p>
+                  </div>
+                  <div>
+                    <a href={href} className="follow-Button">
+                      Follow
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

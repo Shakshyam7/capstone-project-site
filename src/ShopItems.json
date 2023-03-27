@@ -1,110 +1,122 @@
 [
-    {
-      "id": "1",
-      "image": "images/ful.jpg",
-      "title": "Flower by My Side",
-      "alt": "Painting of Flower hanging int the Wall",
-      "price": "$700",
-      "artist": "Anna Dhakal",
-      "artistImage": "images/Anna.jpg"
-    },
-    {
-      "id": "2",
-      "image": "images/serenity.jpeg",
-      "alt": "A peaceful lake in the middle of forest",
-      "title": "Serenity",
-      "price": "$200",
-      "artist": "Sunita Dawadi",
-      "artistImage": "images/Sunita.jpg"
-    },
-    {
-      "id": "3",
-      "image": "images/Matkaful.jpg",
-      "alt": "Paining of Flower hanging in the Wall",
-      "title": "Matka",
-      "price": "$400",
-      "artist": "Anna Dhakal",
-      "artistImage": "images/Anna.jpg"
-    },
-    {
-      "id": "4",
-      "image": "images/RedForest.jpeg",
-      "alt": "A beautiful forest in spring where leaves are red",
-      "title": "Walking by the Red Forest",
-      "price": "$300",
-      "artist": "Sunita Dawadi",
-      "artistImage": "images/Sunita.jpg"
-    },
-    {
-      "id": "5",
-      "image": "images/hilo.jpg",
-      "alt": "Painting of leaves scattered in pond",
-      "title": "Leaves Scattered in Pond",
-      "price": "$500",
-      "artist": "Anna Dhakal",
-      "artistImage": "images/Anna.jpg"
-    },
-    {
-      "id": "6",
-      "image": "images/Chill.jpg",
-      "alt": "Painting of a Vulture",
-      "title": "A Vulture ",
-      "price": "$190",
-      "artist": "Ivan Oliver",
-      "artistImage": "images/Ivan.jpg"
-    },
-    {
-        "id": "7",
-        "image": "images/Bhairav.jpg",
-        "title": "God Bhairav ",
-        "alt": "Paining of Bhairav who is a god in hindu culture",
-        "price": "$700",
-        "artist": "Anna Dhakal",
-        "artistImage": "images/Anna.jpg"
-      },
-      {
-        "id": "8",
-        "image": "images/first snowfall.jpeg",
-        "alt": "First snowfall art ",
-        "title": "First Snowfall",
-        "price": "$200",
-        "artist": "Sunita Dawadi",
-        "artistImage": "images/Sunita.jpg"
-      },
-      {
-        "id": "9",
-        "image": "images/Monastries.jpg",
-        "alt": "Buddist Monastries art ",
-        "title": "Buddhist Monastry",
-        "price": "$400",
-        "artist": "Anna Dhakal",
-        "artistImage": "images/Anna.jpg"
-      },
-      {
-        "id": "10",
-        "image": "images/frozen lake.jpeg",
-        "alt": "Painting of frozen lake in winter",
-        "title": "Frozen Lake in Winter",
-        "price": "$200",
-        "artist": "Sunita Dawadi",
-        "artistImage": "images/Sunita.jpg"
-      },
-      {
-        "id": "11",
-        "image": "images/Pink Flower.jpg",
-        "alt": "A gorgeous art of pink flower",
-        "title": "Gorgeour Pink Flower",
-        "price": "$599",
-        "artist": "Anna Dhakal",
-        "artistImage": "images/Anna.jpg"
-      },
-      {
-        "id": "12",
-        "image": "images/AkashmaChill.jpg",
-        "alt": "Painting of birds flying in the sky of beautiful valley",
-        "title": "Birds Flying Over a Beautiful Valley",
-        "price": "$190",
-        "artist": "Ivan Oliver",
-        "artistImage": "images/Ivan.jpg"
-      }
-  ]
+  {
+    "id": "1",
+    "image": "images/ful.jpg",
+    "title": "Flower by My Side",
+    "alt": "Painting of Flower hanging int the Wall",
+    "price": "$700",
+    "artist": "Anna Dhakal",
+    "href": "https://www.instagram.com/annaportray/",
+    "artistImage": "images/Anna.jpg"
+  },
+  {
+    "id": "2",
+    "image": "images/serenity.jpeg",
+    "alt": "A peaceful lake in the middle of forest",
+    "title": "Serenity",
+    "price": "$200",
+    "artist": "Sunita Dawadi",
+    "href": "https://www.facebook.com/sunita.dawadi.3",
+    "artistImage": "images/Sunita.jpg"
+  },
+  {
+    "id": "3",
+    "image": "images/Matkaful.jpg",
+    "alt": "Paining of Flower hanging in the Wall",
+    "title": "Matka",
+    "price": "$400",
+    "artist": "Anna Dhakal",
+    "href": "https://www.instagram.com/annaportray/",
+    "artistImage": "images/Anna.jpg"
+  },
+  {
+    "id": "4",
+    "image": "images/RedForest.jpeg",
+    "alt": "A beautiful forest in spring where leaves are red",
+    "title": "Walking by the Red Forest",
+    "price": "$300",
+    "artist": "Sunita Dawadi",
+    "href": "https://www.facebook.com/sunita.dawadi.3",
+    "artistImage": "images/Sunita.jpg"
+  },
+  {
+    "id": "5",
+    "image": "images/hilo.jpg",
+    "alt": "Painting of leaves scattered in pond",
+    "title": "Leaves Scattered in Pond",
+    "price": "$500",
+    "artist": "Anna Dhakal",
+    "href": "https://www.instagram.com/annaportray/",
+    "artistImage": "images/Anna.jpg"
+  },
+  {
+    "id": "6",
+    "image": "images/Chill.jpg",
+    "alt": "Painting of a Vulture",
+    "title": "A Vulture ",
+    "price": "$190",
+    "artist": "Ivan Oliver",
+    "href": "https://www.facebook.com/ivan.olivari.3",
+    "artistImage": "images/Ivan.jpg"
+  },
+  {
+    "id": "7",
+    "image": "images/Bhairav.jpg",
+    "title": "God Bhairav ",
+    "alt": "Paining of Bhairav who is a god in hindu culture",
+    "price": "$700",
+    "artist": "Anna Dhakal",
+    "href": "https://www.instagram.com/annaportray/",
+    "artistImage": "images/Anna.jpg"
+  },
+  {
+    "id": "8",
+    "image": "images/first snowfall.jpeg",
+    "alt": "First snowfall art ",
+    "title": "First Snowfall",
+    "price": "$200",
+    "artist": "Sunita Dawadi",
+    "href": "https://www.facebook.com/sunita.dawadi.3",
+    "artistImage": "images/Sunita.jpg"
+  },
+  {
+    "id": "9",
+    "image": "images/Monastries.jpg",
+    "alt": "Buddist Monastries art ",
+    "title": "Buddhist Monastry",
+    "price": "$400",
+    "artist": "Anna Dhakal",
+    "href": "https://www.instagram.com/annaportray/",
+    "artistImage": "images/Anna.jpg"
+  },
+  {
+    "id": "10",
+    "image": "images/frozen lake.jpeg",
+    "alt": "Painting of frozen lake in winter",
+    "title": "Frozen Lake in Winter",
+    "price": "$200",
+    "artist": "Sunita Dawadi",
+    "href": "https://www.facebook.com/sunita.dawadi.3",
+    "artistImage": "images/Sunita.jpg"
+  },
+  {
+    "id": "11",
+    "image": "images/Pink Flower.jpg",
+    "alt": "A gorgeous art of pink flower",
+    "title": "Gorgeour Pink Flower",
+    "price": "$599",
+    "artist": "Anna Dhakal",
+    "href": "https://www.instagram.com/annaportray/",
+    "artistImage": "images/Anna.jpg"
+  },
+  {
+    "id": "12",
+    "image": "images/AkashmaChill.jpg",
+    "alt": "Painting of birds flying in the sky of beautiful valley",
+    "title": "Birds Flying Over a Beautiful Valley",
+    "price": "$190",
+    "artist": "Ivan Oliver",
+    "href": "https://www.facebook.com/ivan.olivari.3",
+    "artistImage": "images/Ivan.jpg"
+  }
+]
