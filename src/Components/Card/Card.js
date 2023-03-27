@@ -20,8 +20,7 @@ function Card({ image, alt, title, onClick }) {
             <FavoriteBorderIcon sx={{ fontSize: 40, color: "#212529" }} />
           )}
         </div>
-
-        <p className="title">{title}</p>
+        <div className="title">{title}</div>
       </div>
     </>
   );

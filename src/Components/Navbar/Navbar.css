@@ -149,6 +149,7 @@
     Top: 0;
     left: 0;
     z-index: 999;
+    overflow: scroll;
     
   }
 
@@ -159,11 +160,10 @@
   }
   
   .nav__menu-item {
-    cursor: pointer;
-    padding: 2rem;
+   cursor: pointer;
+   padding: 2rem;
    text-align: center;
    color: rgba(255, 255, 255, 0.75);
-
 
 
   }
