@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Cart.css";
 
@@ -9,7 +9,9 @@ import Button from "./Components/Buttons/Button";
 
 function Cart() {
   const { items, isEmpty, removeItem } = useCart();
-
+  useEffect(() => {
+    document.title = "Cart - Add beautiful arts in your collection";
+  }, []);
   return (
     <>
       <div className="cartContainer">

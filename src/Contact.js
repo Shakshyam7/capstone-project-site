@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import AppForm from "./Components/Form/Form";
 import Footer from "./Components/Footer/Footer";
@@ -6,6 +6,10 @@ import Footer from "./Components/Footer/Footer";
 import "./Contact.css";
 
 function Contact() {
+  useEffect(() => {
+    document.title = "Contact Us";
+    document.description = "Reach to us for any inqueries"
+  }, []);
   return (
     <>
       <div className="imageContainer">
