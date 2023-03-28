@@ -214,7 +214,10 @@ function Home() {
           </h2>
           <div className="card">
             <Card image={"images/ful.jpg"} alt={"Flower"} />
-            <Card image={"images/himal.jpg"} alt={"Beautiful painting of landscape"} />
+            <Card
+              image={"images/himal.jpg"}
+              alt={"Beautiful painting of landscape"}
+            />
           </div>
           <div className="divContainer">
             <CodeSnippet code={cardCode} codeLanguage={"React"} />
@@ -287,6 +290,7 @@ function Home() {
             text={
               "Add a touch of Beauty to your Home with our Stunning Pieces of Art."
             }
+            src={"images/moon.jpg"}
           />
           <div className="divContainer">
             <CodeSnippet code={heroSectionCode} codeLanguage={"React"} />

@@ -29,7 +29,8 @@ function Home() {
           text={
             "Add a touch of Beauty to your Home with our Stunning Pieces of Art."
           }
-          image={"images/moon.jpg"}
+          link = {"/shop"}
+          src={"images/moon.jpg"}
         />
       </div>
       <div className="imgviewContainer">
@@ -68,12 +69,8 @@ function Home() {
           We make customized art for You and your house and ship to your house
           without any fees.
         </div>
-        <Link to="./contact">
-          <Button
-            className={"button__primary"}
-            name={"Contact Us"}
-            onClick={() => {}}
-          />
+        <Link to="/contact">
+          <Button className={"button__primary"} name={"Contact Us"} />
         </Link>
       </div>
       <div
