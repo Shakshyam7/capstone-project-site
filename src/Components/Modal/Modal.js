@@ -50,7 +50,7 @@ function Modal({
                       className="follow-Button"
                       rel="noreferrer"
                       target="_blank"
-                      onClick={() => alert("Opens in a new tab")}
+                      onClick={() => alert("Opens in a New Tab")}
                     >
                       Follow
                     </a>

@@ -42,7 +42,7 @@
 
 .infoContainer {
     margin-top: 24px;
-}
+   }
    .productTitle{
     font-size: 1.5rem;
    }
@@ -51,6 +51,5 @@
     margin-top: 24px;
     justify-content: space-between;
     position: relative;
-    max-width: auto;
 }
 }
