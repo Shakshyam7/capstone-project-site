@@ -113,7 +113,17 @@
     height: 50vh;
   }  
   .text{
+    text-align: left;
+  }
+  .text2{
+    
+    margin: 80px 12px;
+    padding: 0px 0px 0px 24px;
     text-align: center;
+  }
+  .textContent{
+    text-align: left;
+
   }
   
 }

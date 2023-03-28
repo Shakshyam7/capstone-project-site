@@ -1,13 +1,16 @@
 .productsContainer {
     display: flex;
-    width: fit-content;
     margin: 48px 8px ;
-    
+    overflow: hidden;
 }
 
 .productImage{
     width: 50vh;
-    height: 40vh
+    height: 40vh;
+    overflow: hidden;
+    border-radius: 4px;
+
+
 }
 .infoContainer {
     display: flex;
