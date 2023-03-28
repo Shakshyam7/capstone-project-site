@@ -17,15 +17,19 @@ function Form() {
                 name={"label__textfield"}
                 className={"textfield"}
                 type="text"
-                placeholder={"First Name"}
+                placeholder={"Hari"}
                 autoComplete={"given-name"}
+                text = {"First Name"}
+
               />
               <Textfield
                 name={"label__textfield"}
                 className={"textfield"}
                 type="text"
-                placeholder={"Last Name"}
+                placeholder={"Bahadur"}
                 autoComplete={"family-name"}
+                text = {"Last Name"}
+
               />
             </div>
             <div className="form__text2">
@@ -33,8 +37,10 @@ function Form() {
                 name={"label__textfield"}
                 className={"textfield"}
                 type="email"
-                placeholder={"Email"}
+                placeholder={"haribaharur@gmail.com"}
                 autoComplete={"email"}
+                text = {"Email"}
+
               />
             </div>
             <div className="form__text2">
@@ -42,15 +48,18 @@ function Form() {
                 name={"label__textfield"}
                 className={"textfield"}
                 type="tel"
-                placeholder={"Number"}
+                placeholder={"837-388-9999"}
                 autoComplete={"tel"}
+                text = {"Phone"}
+
               />
             </div>
             <div className="form__text3">
+              <label className="label-textarea">Message</label>
               <textarea
                 className="label__textarea"
                 name="message"
-                placeholder="Message"
+                placeholder="Leave us any messgages you have for us."
               ></textarea>
             </div>
           </div>
