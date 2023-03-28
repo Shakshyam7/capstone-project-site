@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Card from "./Components/Card/Card";
 import Footer from "./Components/Footer/Footer";
@@ -17,6 +17,9 @@ function Shop() {
     setShowContent(!showContent);
     setSelectedItem(item);
   };
+  useEffect(() => {
+    document.title = "Shop - Browse stunning paintings";
+  }, []);
   return (
     <>
       <div className="shopPageTitle">

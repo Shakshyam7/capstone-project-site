@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Button from "./Components/Buttons/Button.js";
 import Card from "./Components/Card/Card.js";
@@ -53,7 +53,10 @@ const item = {
 function Home() {
   const [click, setClick] = useState(false);
   const [displayModal, setDisplayModal] = useState(false);
-  console.log(click);
+  useEffect(() => {
+    document.title = "Design System - Artshop";
+  }, []);
+
   return (
     <>
       <div className="homepageContainer">

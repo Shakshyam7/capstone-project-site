@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./Home.css";
@@ -21,7 +21,9 @@ function Home() {
     setSelectedItem(item);
   };
 
-  console.log(showContent);
+  useEffect(() => {
+    document.title = "ArtShop - Buy stunning arts online";
+  }, []);
   return (
     <div className="homeContainer">
       <div className="herosectionContainer">
@@ -29,7 +31,7 @@ function Home() {
           text={
             "Add a touch of Beauty to your Home with our Stunning Pieces of Art."
           }
-          link = {"/shop"}
+          link={"/shop"}
           src={"images/moon.jpg"}
         />
       </div>
