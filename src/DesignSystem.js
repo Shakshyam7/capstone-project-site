@@ -181,9 +181,9 @@ function Home() {
               type={"text"}
             />
             <Textfield
-              name={"label__textfield-disabled"}
+              name={"label__textfield"}
               className={"textfield"}
-              property={"true"}
+              disabled={"true"}
               text={"Textfield Disabled"}
               type={"text"}
             />
