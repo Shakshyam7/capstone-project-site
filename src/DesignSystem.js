@@ -214,7 +214,7 @@ function Home() {
           </h2>
           <div className="card">
             <Card image={"images/ful.jpg"} alt={"Flower"} />
-            <Card image={"images/himal.jpg"} alt={"leaves in pond"} />
+            <Card image={"images/himal.jpg"} alt={"Beautiful painting of landscape"} />
           </div>
           <div className="divContainer">
             <CodeSnippet code={cardCode} codeLanguage={"React"} />

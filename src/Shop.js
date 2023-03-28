@@ -19,7 +19,9 @@ function Shop() {
   };
   return (
     <>
-      <div className = "shopPageTitle">Browse Gorgeous Arts from our Collection.</div>
+      <div className="shopPageTitle">
+        Browse Gorgeous Arts from our Collection.
+      </div>
       <div className="shopContainer">
         {shopItems.map((item, index) => (
           <Card
@@ -41,6 +43,7 @@ function Shop() {
             price={selectedItem.price}
             artist={selectedItem.artist}
             artistImage={selectedItem.artistImage}
+            href={selectedItem.href}
             onClick={() => {
               setShowContent(false);
               addItem(selectedItem);

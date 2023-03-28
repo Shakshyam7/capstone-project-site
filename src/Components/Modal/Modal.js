@@ -45,7 +45,13 @@ function Modal({
                     <p className="profileName">{artist}</p>
                   </div>
                   <div>
-                    <a href={href} className="follow-Button">
+                    <a
+                      href={href}
+                      className="follow-Button"
+                      rel="noreferrer"
+                      target="_blank"
+                      onClick={() => alert("Opens in a new tab")}
+                    >
                       Follow
                     </a>
                   </div>
