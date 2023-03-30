@@ -6,12 +6,14 @@ import Contact from "./Contact";
 import Cart from "./Cart";
 import { CartProvider } from "react-use-cart";
 import Navbar from "./Components/Navbar/Navbar";
+import DesignSystemNav from "./DesignSystemNav/DesignSystemNav";
 
 function App() {
   return (
     <>
       <CartProvider>
         <Router>
+          <DesignSystemNav />
           <Routes>
             <Route path="/" element={<DesignSystem />} />
             <Route path="/home" element={<Home />} />
