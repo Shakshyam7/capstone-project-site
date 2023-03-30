@@ -40,8 +40,6 @@ import Sidebar from "./Components/Sidebar.js/Sidebar.js";
 import Modal from "./Components/Modal/Modal.js";
 import { BiMenuAltLeft } from "react-icons/bi";
 import Navbar from "./Components/Navbar/Navbar.js";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const item = {
   id: "3",
@@ -123,16 +121,7 @@ function Home() {
           <div className="designNavbarContainer">
             <Navbar />
           </div>
-          <div className="divContainer">
-            <CodeSnippet code={navbarCode} codeLanguage={"React"} />
-            <CodeSnippet code={navbarCSS} codeLanguage={"React"} />
-          </div>
-          <SyntaxHighlighter language="jsx" style={dark}>
-            {navbarCode}
-          </SyntaxHighlighter>
-          <SyntaxHighlighter language="css" style={dark}>
-            {navbarCSS}
-          </SyntaxHighlighter>
+          <CodeSnippet code={navbarCode} css={navbarCSS} />
 
           <h2 className="heading" id="colors">
             Colors
@@ -140,9 +129,7 @@ function Home() {
           <div className="homeColorContainer">
             <Colors />
           </div>
-          <div className="divContainer">
-            <CodeSnippet code={themeCode} codeLanguage={"React"} />
-          </div>
+          <CodeSnippet code={themeCode} />
           <h2 className="heading" id="typography">
             Typography
           </h2>
@@ -161,8 +148,7 @@ function Home() {
           </div>
 
           <div className="divContainer">
-            <CodeSnippet code={buttonCode} codeLanguage={"React"} />
-            <CodeSnippet code={buttonCSS} codeLanguage={"CSS "} />
+            <CodeSnippet code={buttonCode} css={buttonCSS} />
           </div>
 
           <h2 className="heading" id="breadcrumbs">
@@ -203,8 +189,7 @@ function Home() {
           </div>
 
           <div className="divContainer">
-            <CodeSnippet code={textfieldCode} codeLanguage={"React"} />
-            <CodeSnippet code={textfieldCSS} codeLanguage={"CSS "} />
+            <CodeSnippet code={textfieldCode} css={textfieldCSS} />
           </div>
 
           <h2 className="heading" id="checkbox/radio">
@@ -221,8 +206,7 @@ function Home() {
             <SelectionBox type={"Checkbox"} label={"Checkbox"} />
           </div>
           <div className="divContainer">
-            <CodeSnippet code={selectionBoxCode} codeLanguage={"React"} />
-            <CodeSnippet code={selectionBoxCSS} codeLanguage={"CSS "} />
+            <CodeSnippet code={selectionBoxCode} css={selectionBoxCSS} />
           </div>
           <h2 className="heading" id="list">
             List Group
@@ -242,8 +226,7 @@ function Home() {
             />
           </div>
           <div className="divContainer">
-            <CodeSnippet code={listCode} codeLanguage={"React"} />
-            <CodeSnippet code={listCSS} codeLanguage={"CSS "} />
+            <CodeSnippet code={listCode} css={listCSS} />
           </div>
           <h2 className="heading" id="card">
             Card
@@ -261,8 +244,7 @@ function Home() {
             />
           </div>
           <div className="divContainer">
-            <CodeSnippet code={cardCode} codeLanguage={"React"} />
-            <CodeSnippet code={cardCSS} codeLanguage={"CSS "} />
+            <CodeSnippet code={cardCode} css={cardCSS} />
           </div>
           <h2 className="heading" id="modal">
             Modal
@@ -276,8 +258,7 @@ function Home() {
             />
           </div>
           <div className="divContainer">
-            <CodeSnippet code={modalCode} codeLanguage={"React"} />
-            <CodeSnippet code={modalCSS} codeLanguage={"CSS "} />
+            <CodeSnippet code={modalCode} css={modalCSS} />
             {displayModal && (
               <div className="dModal">
                 <Modal
@@ -300,8 +281,7 @@ function Home() {
             <Form />
           </div>
           <div className="divContainer">
-            <CodeSnippet code={formCode} codeLanguage={"React"} />
-            <CodeSnippet code={formCSS} codeLanguage={"CSS "} />
+            <CodeSnippet code={formCode} css={formCSS} />
           </div>
           <h2 className="heading" id="herosection">
             HeroSection
@@ -313,15 +293,13 @@ function Home() {
             src={"images/moon.jpg"}
           />
           <div className="divContainer">
-            <CodeSnippet code={heroSectionCode} codeLanguage={"React"} />
-            <CodeSnippet code={heroSectionCSS} codeLanguage={"CSS "} />
+            <CodeSnippet code={heroSectionCode} css={heroSectionCSS} />
           </div>
           <h2 className="heading" id="footer">
             Footer
           </h2>
           <div className="divContainer">
-            <CodeSnippet code={footerCode} codeLanguage={"React"} />
-            <CodeSnippet code={footerCSS} codeLanguage={"CSS "} />
+            <CodeSnippet code={footerCode} css={footerCSS} />
           </div>
           <div>
             <Footer />
