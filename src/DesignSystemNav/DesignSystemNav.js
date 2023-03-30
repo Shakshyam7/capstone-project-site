@@ -9,20 +9,25 @@ function DesignSystemNav() {
     <>
       <div className="dnavbar-container">
         <div className="dtitle">Design System</div>
-        <div className="site-linkContainer">
-          <Link to="/home" className="site-link">
-            Go to Site
-          </Link>
-        </div>
-        <div className="socialIconsContainer">
-          <div className="social-icon">
-            <FaGithub />
+        <div className="icon-siteContainer">
+          <div className="site-linkContainer">
+            <Link to="/home" className="site-link">
+              Go to Site
+            </Link>
           </div>
-          <div className="social-icon">
-            <FaLinkedin />
-          </div>
-          <div className="social-icon">
-            <FaInstagram />
+          <div className="socialIconsContainer">
+            <a  href="https://github.com/Shakshyam7/capstone-project-site" className="social-icon">
+              <FaGithub />
+            </a>
+            <a
+              href= "https://github.com/Shakshyam7/capstone-project-site"
+              className="social-icon"
+            >
+              <FaLinkedin />
+            </a>
+            <a  href = "https://www.instagram.com/" className="social-icon">
+              <FaInstagram />
+            </a >
           </div>
         </div>
       </div>
