@@ -6,6 +6,7 @@ import "./CodeSnippet.css";
 export default function CodeSnippet({ code, css }) {
   return (
     <>
+      <div className = "codeLanguage">React</div>
       <div className="codeContainer">
         <SyntaxHighlighter language="jsx" style={vscDarkPlus}>
           {code}
@@ -13,11 +14,15 @@ export default function CodeSnippet({ code, css }) {
       </div>
 
       {css && (
-        <div className="cssContainer">
-          <SyntaxHighlighter language="css" style={vscDarkPlus}>
-            {css}
-          </SyntaxHighlighter>
-        </div>
+        <>
+          <div className = "codeLanguage">CSS</div>
+
+          <div className="cssContainer">
+            <SyntaxHighlighter language="css" style={vscDarkPlus}>
+              {css}
+            </SyntaxHighlighter>
+          </div>
+        </>
       )}
     </>
   );

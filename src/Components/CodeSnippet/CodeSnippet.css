@@ -1,10 +1,27 @@
 .codeContainer{
     height: 400px;
     overflow: scroll;
+    padding: 0px 56px;
 }
 .cssContainer{
     height: 400px;
     overflow: scroll;
+    padding: 0px 56px;
+
+}
 
 
+.cssContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.codeContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.codeLanguage{
+    font-weight: 500;
+    padding: 24px 0px 0px 56px;
+
+    
 }
