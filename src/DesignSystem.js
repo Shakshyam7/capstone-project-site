@@ -14,7 +14,7 @@ import "./DesignSystem.css";
 import Breadcrumbs from "./Components/Breadcrumbs/Breadcrumbs.js";
 import { UnorderList, OrderList } from "./Components/List Group/List.js";
 
-import CodeSnippet from "./CodeSnippet.js";
+import CodeSnippet from "./Components/CodeSnippet/CodeSnippet.js";
 import { cardCode, cardCSS } from "./Components/Card/CardSnippet.js";
 import { modalCode, modalCSS } from "./Components/Modal/modalSnippet";
 import { formCode, formCSS } from "./Components/Form/FormSnippet.js";
@@ -147,9 +147,7 @@ function Home() {
             <Button name={"Button-T"} className={"button__text"} />
           </div>
 
-          <div className="divContainer">
-            <CodeSnippet code={buttonCode} css={buttonCSS} />
-          </div>
+          <CodeSnippet code={buttonCode} css={buttonCSS} />
 
           <h2 className="heading" id="breadcrumbs">
             Breadcrumbs
@@ -188,9 +186,7 @@ function Home() {
             />
           </div>
 
-          <div className="divContainer">
-            <CodeSnippet code={textfieldCode} css={textfieldCSS} />
-          </div>
+          <CodeSnippet code={textfieldCode} css={textfieldCSS} />
 
           <h2 className="heading" id="checkbox/radio">
             Checkbox/Radio button
@@ -205,9 +201,7 @@ function Home() {
             <SelectionBox type={"Checkbox"} />
             <SelectionBox type={"Checkbox"} label={"Checkbox"} />
           </div>
-          <div className="divContainer">
-            <CodeSnippet code={selectionBoxCode} css={selectionBoxCSS} />
-          </div>
+          <CodeSnippet code={selectionBoxCode} css={selectionBoxCSS} />
           <h2 className="heading" id="list">
             List Group
           </h2>
@@ -225,9 +219,7 @@ function Home() {
               ]}
             />
           </div>
-          <div className="divContainer">
-            <CodeSnippet code={listCode} css={listCSS} />
-          </div>
+          <CodeSnippet code={listCode} css={listCSS} />
           <h2 className="heading" id="card">
             Card
           </h2>
@@ -243,9 +235,7 @@ function Home() {
               title={"Beautiful landscape painting"}
             />
           </div>
-          <div className="divContainer">
-            <CodeSnippet code={cardCode} css={cardCSS} />
-          </div>
+          <CodeSnippet code={cardCode} css={cardCSS} />
           <h2 className="heading" id="modal">
             Modal
           </h2>
@@ -257,22 +247,20 @@ function Home() {
               onClick={() => setDisplayModal(true)}
             />
           </div>
-          <div className="divContainer">
-            <CodeSnippet code={modalCode} css={modalCSS} />
-            {displayModal && (
-              <div className="dModal">
-                <Modal
-                  image={item.image}
-                  title={item.title}
-                  alt={item.alt}
-                  price={item.price}
-                  artist={item.artist}
-                  artistImage={item.artistImage}
-                  onClick={() => setDisplayModal(false)}
-                />
-              </div>
-            )}
-          </div>
+          <CodeSnippet code={modalCode} css={modalCSS} />
+          {displayModal && (
+            <div className="dModal">
+              <Modal
+                image={item.image}
+                title={item.title}
+                alt={item.alt}
+                price={item.price}
+                artist={item.artist}
+                artistImage={item.artistImage}
+                onClick={() => setDisplayModal(false)}
+              />
+            </div>
+          )}
 
           <h2 className="heading" id="form">
             Form
@@ -292,15 +280,11 @@ function Home() {
             }
             src={"images/moon.jpg"}
           />
-          <div className="divContainer">
-            <CodeSnippet code={heroSectionCode} css={heroSectionCSS} />
-          </div>
+          <CodeSnippet code={heroSectionCode} css={heroSectionCSS} />
           <h2 className="heading" id="footer">
             Footer
           </h2>
-          <div className="divContainer">
-            <CodeSnippet code={footerCode} css={footerCSS} />
-          </div>
+          <CodeSnippet code={footerCode} css={footerCSS} />
           <div>
             <Footer />
           </div>

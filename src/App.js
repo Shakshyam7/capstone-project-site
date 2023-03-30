@@ -11,7 +11,7 @@ import Contact from "./Contact";
 import Cart from "./Cart";
 import { CartProvider } from "react-use-cart";
 import Navbar from "./Components/Navbar/Navbar";
-import DesignSystemNav from "./DesignSystemNav/DesignSystemNav";
+import DesignSystemNav from "./Components/DesignSystemNav/DesignSystemNav";
 
 const Header = () => {
   return useLocation().pathname === "/" ? <DesignSystemNav /> : <Navbar />;
