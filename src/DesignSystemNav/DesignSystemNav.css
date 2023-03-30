@@ -8,5 +8,29 @@
 
 }
 .dtitle{
-    color: rgb(255,255,255,0.87)
+    color: rgb(255,255,255,0.7);
+    font-size: 1.5rem;
+}
+.site-linkContainer{
+    position: fixed;
+    right: 56px;
+}
+.site-link{
+    color: #D1516F;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 500px){
+
+    .dnavbar-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .site-linkContainer{
+        position: relative;
+        padding: 8px;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    
 }
