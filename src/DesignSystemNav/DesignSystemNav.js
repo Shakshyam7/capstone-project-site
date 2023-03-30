@@ -16,18 +16,30 @@ function DesignSystemNav() {
             </Link>
           </div>
           <div className="socialIconsContainer">
-            <a  href="https://github.com/Shakshyam7/capstone-project-site" className="social-icon">
+            <a
+              href="https://github.com/Shakshyam7/capstone-project-site"
+              rel="noreferrer"
+              target="_blank"
+              className="social-icon"
+            >
               <FaGithub />
             </a>
             <a
-              href= "https://github.com/Shakshyam7/capstone-project-site"
+              href="https://github.com/Shakshyam7/capstone-project-site"
               className="social-icon"
+              rel="noreferrer"
+              target="_blank"
             >
               <FaLinkedin />
             </a>
-            <a  href = "https://www.instagram.com/" className="social-icon">
+            <a
+              href="https://www.instagram.com/"
+              className="social-icon"
+              rel="noreferrer"
+              target="_blank"
+            >
               <FaInstagram />
-            </a >
+            </a>
           </div>
         </div>
       </div>

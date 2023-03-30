@@ -10,6 +10,7 @@
 .dtitle{
     color: rgb(255,255,255,0.87);
     font-size: 1.5rem;
+    font-weight: 500;
 }
 .icon-siteContainer{
     display: flex;
@@ -22,38 +23,38 @@
 .socialIconsContainer{
     display: flex;
     gap: 24px;
-    color: rgb(255, 255, 255, 0.7);
     font-size: 1.5rem;
     cursor: pointer;
 
 }
 .social-icon{
-    text-decoration: none;
+    color: rgb(255, 255, 255, 0.7);
+
 }
 .social-icon:hover{
     color: rgb(255, 255, 255, 0.87);
 }
-.site-linkContainer:hover{
-     max-width: fit-content;
-     border-bottom: 2px solid #D1516F;;
-    
-}
+
 .site-link{
     color: #D1516F;
     font-weight: 500;
-    text-decoration: none;
 }
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 768px){
 
     .dnavbar-container{
+       display: flex;
+       justify-content: space-between;
     }
-    .site-linkContainer{
-        position: relative;
-        padding: 8px;
-        align-items: flex-end;
+    .dtitle{
+        margin-left: 12px;
+        justify-content: flex-start;
+    }
+    .icon-siteContainer{   
         justify-content: flex-end;
+        right: 12px;
+
     }
     
 }

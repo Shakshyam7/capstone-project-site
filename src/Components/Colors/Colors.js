@@ -15,7 +15,7 @@ function Colors() {
           </div>
         </div>
         <div className="container">
-          <h6 className="colorTitle">secondary</h6>
+          <h6 className="colorTitle">Secondary</h6>
           <div className="rectangleColorContainer">
             <div className="rectangle rectangle4">HEX-FFFFFF(37%) LowEmphasis</div>
             <div className="rectangle rectangle5">HEX-FFFFFF(60%) MediumEmphasis</div>
