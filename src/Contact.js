@@ -8,7 +8,7 @@ import "./Contact.css";
 function Contact() {
   useEffect(() => {
     document.title = "Contact Us";
-    document.description = "Reach to us for any inqueries"
+    document.description = "Reach to us for any inqueries";
   }, []);
   return (
     <>

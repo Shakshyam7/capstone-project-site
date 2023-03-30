@@ -11,6 +11,7 @@
     z-index: 0;
 }
 
+
 .homepageContent {
     margin-top: 5rem;
     border: 1px solid black;
@@ -21,6 +22,11 @@
     bottom: 0;
     right: 0;
 
+}
+
+.designNavbarContainer{
+    display: flex;
+    margin: 56px 0px;
 }
 
 
@@ -105,7 +111,7 @@
     .homepageSidebarContainer{
         display: none;
     }
-
+ 
     
     .mobileSidebar{
         display: flex;

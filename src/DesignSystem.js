@@ -39,6 +39,7 @@ import { footerCode, footerCSS } from "./Components/Footer/FooterSnippet.js";
 import Sidebar from "./Components/Sidebar.js/Sidebar.js";
 import Modal from "./Components/Modal/Modal.js";
 import { BiMenuAltLeft } from "react-icons/bi";
+import Navbar from "./Components/Navbar/Navbar.js";
 
 const item = {
   id: "3",
@@ -117,6 +118,9 @@ function Home() {
           <h2 className="heading" id="navbar">
             Navbar
           </h2>
+          <div className="designNavbarContainer">
+            <Navbar />
+          </div>
           <div className="divContainer">
             <CodeSnippet code={navbarCode} codeLanguage={"React"} />
             <CodeSnippet code={navbarCSS} codeLanguage={"React"} />
