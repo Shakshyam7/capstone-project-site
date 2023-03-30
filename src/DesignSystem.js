@@ -80,10 +80,10 @@ function Home() {
                 "Colors",
                 "Typography",
                 "Buttons",
-                "Textfield",
                 "BreadCrumbs",
-                "List",
+                "Textfield",
                 "Checkbox/Radio",
+                "List",
                 "Card",
                 "Modal",
                 "HeroSection",
@@ -125,6 +125,7 @@ function Home() {
             <CodeSnippet code={navbarCode} codeLanguage={"React"} />
             <CodeSnippet code={navbarCSS} codeLanguage={"React"} />
           </div>
+       
           <h2 className="heading" id="colors">
             Colors
           </h2>
@@ -215,7 +216,27 @@ function Home() {
             <CodeSnippet code={selectionBoxCode} codeLanguage={"React"} />
             <CodeSnippet code={selectionBoxCSS} codeLanguage={"CSS "} />
           </div>
-
+          <h2 className="heading" id="list">
+            List Group
+          </h2>
+          <div className="componentContainer">
+            <h4>Unorder List</h4>
+            <UnorderList
+              items={["Learn React", "Learn Node.js", "Learn Laravel"]}
+            />
+            <h4> Order List</h4>
+            <OrderList
+              items={[
+                "Learn React Native",
+                "Learn Data structure and Algorithm",
+                "Learn Reduxl",
+              ]}
+            />
+          </div>
+          <div className="divContainer">
+            <CodeSnippet code={listCode} codeLanguage={"React"} />
+            <CodeSnippet code={listCSS} codeLanguage={"CSS "} />
+          </div>
           <h2 className="heading" id="card">
             Card
           </h2>
@@ -273,27 +294,6 @@ function Home() {
           <div className="divContainer">
             <CodeSnippet code={formCode} codeLanguage={"React"} />
             <CodeSnippet code={formCSS} codeLanguage={"CSS "} />
-          </div>
-          <h2 className="heading" id="list">
-            List Group
-          </h2>
-          <div className="componentContainer">
-            <h4>Unorder List</h4>
-            <UnorderList
-              items={["Learn React", "Learn Node.js", "Learn Laravel"]}
-            />
-            <h4> Order List</h4>
-            <OrderList
-              items={[
-                "Learn React Native",
-                "Learn Data structure and Algorithm",
-                "Learn Reduxl",
-              ]}
-            />
-          </div>
-          <div className="divContainer">
-            <CodeSnippet code={listCode} codeLanguage={"React"} />
-            <CodeSnippet code={listCSS} codeLanguage={"CSS "} />
           </div>
           <h2 className="heading" id="herosection">
             HeroSection

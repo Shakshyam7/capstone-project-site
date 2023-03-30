@@ -5,7 +5,7 @@ export default function CodeSnippet(props) {
         background: "rgba(0, 0, 0, 0.87)",
         width: "fit-content",
         height: "80vh",
-        padding: "16px",
+        padding: "16px", 
         overflow: "scroll",
 
       }}
