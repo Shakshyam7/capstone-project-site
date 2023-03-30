@@ -9,6 +9,10 @@
   background-color: rgba(0, 0, 0, 0.37); 
 }
 
+.modal::-webkit-scrollbar{
+  display: none
+}
+
 .modalContainer {
   background-color: #EEEEEE;
   position: relative;
@@ -17,11 +21,11 @@
   width: 80%; 
   z-index: 99;
   overflow: scroll;
-
-
-
 }
 
+.modalContainer::-webkit-scrollbar{
+  display: none
+}
 .modalItemsContainer {
   display: flex;
   padding-top: 24px;
