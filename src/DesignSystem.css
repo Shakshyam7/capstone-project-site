@@ -99,6 +99,12 @@
 
 
 
+@media screen and (max-width:768px){
+    .homeColorContainer{
+        padding: 8px;
+    }
+    
+}
 @media screen and (max-width : 576px){ 
    
     
@@ -158,3 +164,9 @@
     }
 }
 
+@media screen and (max-width:768){
+    .homeColorContainer{
+        padding: 0px;
+    }
+    
+}
