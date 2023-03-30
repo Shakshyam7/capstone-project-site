@@ -11,6 +11,10 @@
     color: rgb(255,255,255,0.7);
     font-size: 1.5rem;
 }
+.socialIconContainer{
+    display: flex;
+    flex-direction: row;
+}
 .site-linkContainer{
     position: fixed;
     right: 56px;
