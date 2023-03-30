@@ -216,10 +216,15 @@ function Home() {
             Card
           </h2>
           <div className="card">
-            <Card image={"images/ful.jpg"} alt={"Flower"} />
+            <Card
+              image={"images/ful.jpg"}
+              alt={"Painting of a Flower Hanging in the Wall"}
+              title={"Painting of Flower"}
+            />
             <Card
               image={"images/himal.jpg"}
               alt={"Beautiful painting of landscape"}
+              title={"Beautiful landscape painting"}
             />
           </div>
           <div className="divContainer">
@@ -291,7 +296,7 @@ function Home() {
           </h2>
           <HeroSection
             text={
-              "Add a touch of Beauty to your Home with our Stunning Pieces of Art."
+              "Add a Touch of Beauty to your Home with our Stunning Pieces of Art"
             }
             src={"images/moon.jpg"}
           />

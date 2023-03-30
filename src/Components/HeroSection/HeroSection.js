@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Button from "../Buttons/Button";
 import "./HeroSection.css";
 
-function HeroSection({text, link, src}) {
+function HeroSection({ text, link, src }) {
   return (
     <>
       <div className="heroContainer">
@@ -20,7 +20,7 @@ function HeroSection({text, link, src}) {
         <div className="heroImageContainer">
           <img
             src={src}
-            alt="Moonlight"
+            alt="A Quite Full Moon Night"
             width="400"
             height="300"
           />

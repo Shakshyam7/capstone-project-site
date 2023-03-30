@@ -8,8 +8,8 @@ function Newsletter() {
     <div className="ncontainer">
       <div className="ntitle">Newsletter</div>
       <div className="ntext">
-        Leave us your email to receive latest arts update from our talented
-        artist.
+        Leave us your email to receive the latest updates from our talented
+        artists.
       </div>
       <div className="ntbContainer">
         <Textfield className={"textfield"} type={""} placeholder={"Email"} />

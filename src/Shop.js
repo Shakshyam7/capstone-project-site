@@ -22,9 +22,9 @@ function Shop() {
   }, []);
   return (
     <>
-      <div className="shopPageTitle">
-        Browse Gorgeous Arts from our Collection.
-      </div>
+      <h1 className="shopPageTitle">
+        Browse Gorgeous Art from our Collection.
+      </h1>
       <div className="shopContainer">
         {shopItems.map((item, index) => (
           <Card

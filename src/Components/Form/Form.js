@@ -9,7 +9,7 @@ function Form() {
       <div className="form__container">
         <div classNameName="form__header">
           <h6 className="formtext">
-            Fill out the form below and leave us a messege!
+            Fill out the form below to leave us a messege!
           </h6>
           <div className="formTextInputContainer">
             <div className="form__text1">

@@ -29,7 +29,7 @@ function Home() {
       <div className="herosectionContainer">
         <HeroSection
           text={
-            "Add a touch of Beauty to your Home with our Stunning Pieces of Art."
+            "Add a Touch of Beauty to your Home with our Stunning Pieces of Art"
           }
           link={"/shop"}
           src={"images/moon.jpg"}
@@ -37,7 +37,7 @@ function Home() {
       </div>
       <div className="imgviewContainer">
         <heading className="text">
-          Explore Arts from Creative and talented Artists
+          Explore Art from Creative and Talented Artists
         </heading>
         <div className="homeCardContainer">
           {cardItems.map((item, index) => (
@@ -68,8 +68,8 @@ function Home() {
       </div>
       <div className="text2">
         <div className="textContent">
-          We make customized art for You and your house and ship to your house
-          without any fees.
+          We create personalized artwork based on your specifications, and 
+          deliver to your home without any additional charges.
         </div>
         <Link to="/contact">
           <Button className={"button__primary"} name={"Contact Us"} />
@@ -79,7 +79,7 @@ function Home() {
         style={{ width: "100%", height: 1, border: "1px solid #212529" }}
       ></div>
       <div className="exert">
-        "Art is not what u see but What You Make Other See
+        "Art is not what you see, but what you make others see.”
       </div>
       <div className="artistContainer">
         <div className="image1Container">

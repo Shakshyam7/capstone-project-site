@@ -29,9 +29,9 @@ function Cart() {
           </>
         ) : (
           <>
-            <div className="cartPageItemTitle">
+            <h1 className="cartPageItemTitle">
               Add Stunning Art to your Collection.
-            </div>
+            </h1>
 
             {items.map((item) => (
               <CartProducts

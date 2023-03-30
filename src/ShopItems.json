@@ -2,7 +2,7 @@
   {
     "id": "1",
     "image": "images/ful.jpg",
-    "title": "Flower by My Side",
+    "title": "Flower by my Side",
     "alt": "Painting of Flower hanging int the Wall",
     "price": "$700",
     "artist": "Anna Dhakal",
@@ -22,7 +22,7 @@
   {
     "id": "3",
     "image": "images/MatkaFul.jpg",
-    "alt": "Paining of Flower hanging in the Wall",
+    "alt": "Painting of Flower hanging in the Wall",
     "title": "Matka",
     "price": "$400",
     "artist": "Anna Dhakal",
@@ -103,7 +103,7 @@
     "id": "11",
     "image": "images/Pink Flower.jpg",
     "alt": "A gorgeous art of pink flower",
-    "title": "Gorgeour Pink Flower",
+    "title": "Gorgeous Pink Flower",
     "price": "$599",
     "artist": "Anna Dhakal",
     "href": "https://www.instagram.com/annaportray/",
