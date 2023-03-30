@@ -33,7 +33,7 @@ function DesignSystemNav() {
               <FaLinkedin />
             </a>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/_shakshyam/"
               className="social-icon"
               rel="noreferrer"
               target="_blank"

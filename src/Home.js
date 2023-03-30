@@ -25,7 +25,7 @@ function Home() {
     document.title = "ArtShop - Buy stunning arts online";
   }, []);
   return (
-    <div className="homeContainer">
+    <>
       <div className="herosectionContainer">
         <HeroSection
           text={
@@ -108,7 +108,7 @@ function Home() {
       <div className="homeFooterContainer">
         <Footer />
       </div>
-    </div>
+    </>
   );
 }
 
