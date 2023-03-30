@@ -14,14 +14,14 @@ function DesignSystemNav() {
             Go to Site
           </Link>
         </div>
-        <div className="socialContainer">
-          <div className="githubIcon">
+        <div className="socialIconsContainer">
+          <div className="social-icon">
             <FaGithub />
           </div>
-          <div className="linkedInIcon">
+          <div className="social-icon">
             <FaLinkedin />
           </div>
-          <div className="instaIcon">
+          <div className="social-icon">
             <FaInstagram />
           </div>
         </div>
