@@ -40,6 +40,8 @@ import Sidebar from "./Components/Sidebar.js/Sidebar.js";
 import Modal from "./Components/Modal/Modal.js";
 import { BiMenuAltLeft } from "react-icons/bi";
 import Navbar from "./Components/Navbar/Navbar.js";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const item = {
   id: "3",
@@ -125,7 +127,13 @@ function Home() {
             <CodeSnippet code={navbarCode} codeLanguage={"React"} />
             <CodeSnippet code={navbarCSS} codeLanguage={"React"} />
           </div>
-       
+          <SyntaxHighlighter language="jsx" style={dark}>
+            {navbarCode}
+          </SyntaxHighlighter>
+          <SyntaxHighlighter language="css" style={dark}>
+            {navbarCSS}
+          </SyntaxHighlighter>
+
           <h2 className="heading" id="colors">
             Colors
           </h2>
