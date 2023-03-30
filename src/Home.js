@@ -68,7 +68,7 @@ function Home() {
       </div>
       <div className="text2">
         <div className="textContent">
-          We create personalized artwork based on your specifications, and 
+          We create personalized artwork based on your specifications, and
           deliver to your home without any additional charges.
         </div>
         <Link to="/contact">
