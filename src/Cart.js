@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./Cart.css";
 
+import Button from "./Components/Buttons/Button";
 import CartProducts from "./Components/CartProducts/CartProducts";
 import Footer from "./Components/Footer/Footer";
 import { useCart } from "react-use-cart";
-import Button from "./Components/Buttons/Button";
+import "./Cart.css";
 
 function Cart() {
   const { items, isEmpty, removeItem } = useCart();

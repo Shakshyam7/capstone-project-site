@@ -21,7 +21,7 @@ function Footer() {
         </div>
         <div className="copyrightText">
           copyright &copy; {new Date().getFullYear()}-ArtShop. All rights
-          Reserved.
+          reserved.
         </div>
       </div>
     </>

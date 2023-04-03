@@ -11,13 +11,13 @@
   },
   {
     "id": "2",
-    "image": "images/serenity.jpeg",
-    "alt": "A peaceful lake in the middle of forest",
-    "title": "Serenity",
+    "image": "images/NorthernLight.jpg",
+    "alt": "Beautiful painting of northern light in the sky",
+    "title": "Northern Light",
     "price": "$200",
-    "artist": "Sunita Dawadi",
-    "href": "https://www.facebook.com/sunita.dawadi.3",
-    "artistImage": "images/Sunita.jpg"
+    "artist": "Ivan Oliver",
+    "href": "https://www.facebook.com/ivan.olivari.3",
+    "artistImage": "images/Ivan.jpg"
   },
   {
     "id": "3",

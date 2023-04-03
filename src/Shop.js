@@ -3,14 +3,13 @@ import { useState, useEffect } from "react";
 
 import Card from "./Components/Card/Card";
 import Footer from "./Components/Footer/Footer";
-import "./Shop.css";
 import Modal from "./Components/Modal/Modal";
 import shopItems from "./shopItems.json";
 import { useCart } from "react-use-cart";
+import "./Shop.css";
 
 function Shop() {
   const { addItem } = useCart();
-
   const [showContent, setShowContent] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const handleClick = (item) => {
@@ -22,6 +21,13 @@ function Shop() {
   }, []);
   return (
     <>
+      <div className="bg-imageContainer">
+        <img
+          className="backgroundImage"
+          src="images/northernlight.jpeg"
+          alt="Beautiful northern light in the sky "
+        />
+      </div>
       <h1 className="shopPageTitle">
         Browse Gorgeous Art from our Collection.
       </h1>

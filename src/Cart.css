@@ -45,10 +45,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    .cartContainer{
-        margin: 7rem 12px 48px 12px;
-        background-color: rgba(236, 225, 225, 0.1); 
-    }
     .checkoutButtonContainer{
         margin: 48px 0px;
         

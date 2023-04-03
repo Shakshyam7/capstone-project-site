@@ -96,6 +96,9 @@
     display: flex;
     gap: 12px;
 }
+.footerContainer{
+    margin-top: 24px;
+}
 
 
 

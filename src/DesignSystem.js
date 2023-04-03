@@ -1,54 +1,54 @@
 import React, { useState, useEffect } from "react";
 
 import Button from "./Components/Buttons/Button.js";
-import Card from "./Components/Card/Card.js";
-import Textfield from "./Components/Textfield/textfield";
-import Form from "./Components/Form/Form.js";
-
-import SelectionBox from "./Components/SelectionBox/SelectionBox.js";
-import HeroSection from "./Components/HeroSection/HeroSection.js";
-import Colors from "./Components/Colors/Colors.js";
-import Typography from "./Components/Typography/Typography.js";
-
-import "./DesignSystem.css";
-import Breadcrumbs from "./Components/Breadcrumbs/Breadcrumbs.js";
-import { UnorderList, OrderList } from "./Components/List Group/List.js";
-
-import CodeSnippet from "./Components/CodeSnippet/CodeSnippet.js";
-import { cardCode, cardCSS } from "./Components/Card/CardSnippet.js";
-import { modalCode, modalCSS } from "./Components/Modal/modalSnippet";
-import { formCode, formCSS } from "./Components/Form/FormSnippet.js";
-import {
-  heroSectionCode,
-  heroSectionCSS,
-} from "./Components/HeroSection/HeroSectionSnippet.js";
 import { buttonCode, buttonCSS } from "./Components/Buttons/ButtonSnippet.js";
-import { navbarCode, navbarCSS } from "./Components/Navbar/NavbarSnippet.js";
+import { BiMenuAltLeft } from "react-icons/bi";
+import Breadcrumbs from "./Components/Breadcrumbs/Breadcrumbs.js";
+import Card from "./Components/Card/Card.js";
+import { cardCode, cardCSS } from "./Components/Card/CardSnippet.js";
+import Colors from "./Components/Colors/Colors.js";
+import CodeSnippet from "./Components/CodeSnippet/CodeSnippet.js";
+import Footer from "./Components/Footer/Footer.js";
+import { footerCode, footerCSS } from "./Components/Footer/FooterSnippet.js";
+import Form from "./Components/Form/Form.js";
+import { formCode, formCSS } from "./Components/Form/FormSnippet.js";
+
+import HeroSection from "./Components/HeroSection/HeroSection.js";
 import {
-  textfieldCode,
-  textfieldCSS,
-} from "./Components/Textfield/textfieldSnippet.js";
+  heroSectionCSS,
+  heroSectionCode,
+} from "./Components/HeroSection/HeroSectionSnippet.js";
+
 import { listCode, listCSS } from "./Components/List Group/ListGropsSnippet.js";
+
+import Modal from "./Components/Modal/Modal.js";
+import { modalCode, modalCSS } from "./Components/Modal/modalSnippet";
+import Navbar from "./Components/Navbar/Navbar.js";
+import { navbarCode, navbarCSS } from "./Components/Navbar/NavbarSnippet.js";
+import SelectionBox from "./Components/SelectionBox/SelectionBox.js";
+import Sidebar from "./Components/Sidebar.js/Sidebar.js";
 import {
   selectionBoxCode,
   selectionBoxCSS,
 } from "./Components/SelectionBox/SelectionBoxSnippet.js";
+import Textfield from "./Components/Textfield/textfield";
+import {
+  textfieldCode,
+  textfieldCSS,
+} from "./Components/Textfield/textfieldSnippet.js";
 import themeCode from "./Components/Colors/colorSnippet.js";
-import Footer from "./Components/Footer/Footer.js";
-import { footerCode, footerCSS } from "./Components/Footer/FooterSnippet.js";
-import Sidebar from "./Components/Sidebar.js/Sidebar.js";
-import Modal from "./Components/Modal/Modal.js";
-import { BiMenuAltLeft } from "react-icons/bi";
-import Navbar from "./Components/Navbar/Navbar.js";
+import Typography from "./Components/Typography/Typography.js";
+import { UnorderList, OrderList } from "./Components/List Group/List.js";
+import "./DesignSystem.css";
 
 const item = {
   id: "3",
-  image: "images/Matkaful.jpg",
-  alt: "Paining of Flower hanging in the Wall",
-  title: "A Quite FullMoon Night",
+  image: "images/Ratri.jpg",
+  alt: "Paining of beautiful pond at night with a moon on the sky.",
+  title: "A Quite Pond at Night",
   price: "$400",
-  artist: "Anna Dhakal",
-  artistImage: "images/Anna.jpg",
+  artist: "Ivan Oliver",
+  artistImage: "images/Ivan.jpg",
 };
 
 function Home() {
@@ -268,9 +268,7 @@ function Home() {
           <div className="formContainer" id="form">
             <Form />
           </div>
-          <div className="divContainer">
-            <CodeSnippet code={formCode} css={formCSS} />
-          </div>
+          <CodeSnippet code={formCode} css={formCSS} />
           <h2 className="heading" id="herosection">
             HeroSection
           </h2>
@@ -285,7 +283,7 @@ function Home() {
             Footer
           </h2>
           <CodeSnippet code={footerCode} css={footerCSS} />
-          <div>
+          <div className="footer-container">
             <Footer />
           </div>
         </div>

@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 
 import AppForm from "./Components/Form/Form";
 import Footer from "./Components/Footer/Footer";
-
 import "./Contact.css";
 
 function Contact() {
@@ -15,7 +14,7 @@ function Contact() {
       <div className="imageContainer">
         <img
           src={"images/contact.jpg"}
-          width="50%"
+          width="50%"   
           alt="A lady answering calls and emails."
         />
       </div>
@@ -24,9 +23,9 @@ function Contact() {
           <cont className="cont">Contact Us</cont>
           <p className="para"> We would love to speak with you. </p>
           <p className="para">
-            Feel free to reach out using the below details.
+            Feel free to reach out using the details below.
           </p>
-          <p className="tit">Get In touch</p>
+          <p className="tit">Get In Touch</p>
           <p className="para"> Phone: +17783475839</p>
         </div>
 
