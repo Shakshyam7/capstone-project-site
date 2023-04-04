@@ -2,16 +2,17 @@ const buttonCode = `
 import React from "react";
 import "./Button.css";
 
-function Button(props) {
+function Button({ name, onClick, className }) {
   return (
     <>
-      <button className={props.class}>{props.name}</button>
+      <button onClick={onClick} className={className}>
+        {name}
+      </button>
     </>
   );
 }
 
 export default Button;
-
 
 `;
 

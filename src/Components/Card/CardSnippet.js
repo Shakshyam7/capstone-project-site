@@ -1,34 +1,36 @@
 const cardCode = `
-import React, { useState } from "react";
-import { MdFavoriteBorder } from "react-icons/md";
-import "./Card.css";
+import React from "react";
 
-function Card(props) {
-  const [isHovered, setIsHovered] = useState(false);
-  const handleHover = () => setIsHovered(!isHovered);
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import "./Card.css";
+import { useState } from "react";
+
+function Card({ image, alt, title, onClick }) {
+  const [click, setClick] = useState(false);
   return (
     <>
-      <div className="card__container">
-        <img
-          src={props.Image}
-          alt={props.Alt}
-          width=" 350px"
-          height="378px"
-          onMouseEnter={() => handleHover()}
-          onMouseLeave={() => handleHover()}
-        />
-        {isHovered && (
-          <div className="wishlist__logo">
-            <MdFavoriteBorder />
-          </div>
-        )}
+      <div className="card__container" onClick={onClick}>
+        <img className="card__image" src={image} alt={alt} />
+
+        <div className="wishlist__logo" onClick={() => setClick(!click)}>
+          {click ? (
+            <FavoriteIcon
+              sx={{ fontSize: 40, color: "rgba(209, 81, 111, 0.87)" }}
+            />
+          ) : (
+            <FavoriteBorderIcon sx={{ fontSize: 40, color: "#212529" }} />
+          )}
+        </div>
+        <div className="title">{title}</div>
       </div>
     </>
   );
 }
 
 export default Card;
-`;
+`
+
 
 const cardCSS = `
 .card__container {

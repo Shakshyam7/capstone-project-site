@@ -1,29 +1,37 @@
 const heroSectionCode = `
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Button from "../Buttons/Button";
-import heroImage from "./../Images/moon.jpg";
-
 import "./HeroSection.css";
 
-function HeroSection(props) {
+function HeroSection({ text, link, src }) {
   return (
     <>
       <div className="heroContainer">
         <div className="textContainer">
-          <h1>{props.text}</h1>
-          <Button class={"button__primary"} name={"Explore"} />
-          <Button class={"button__text"} name={"View"} />
+          <h1 className="heroText">{text}</h1>
+
+          <div>
+            <Link to={link}>
+              <Button className={"button__primary"} name={"Explore"} />
+            </Link>
+          </div>
         </div>
-        <img src={heroImage} alt="Moonlight" width="400" height="300" />
+        <div className="heroImageContainer">
+          <img
+            src={src}
+            alt="A Quite Full Moon Night"
+            width="400"
+            height="300"
+          />
+        </div>
       </div>
     </>
   );
 }
 
 export default HeroSection;
-
-
 
 `;
 

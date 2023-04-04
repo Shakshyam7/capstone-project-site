@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-import { Link} from "react-router-dom";
-import { useState } from "react";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
-import "./Navbar.css";
 import { useCart } from "react-use-cart";
+import "./Navbar.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);

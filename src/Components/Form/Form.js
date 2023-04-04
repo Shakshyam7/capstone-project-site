@@ -1,6 +1,7 @@
 import React from "react";
-import Textfield from "../Textfield/textfield";
+
 import Button from "../Buttons/Button";
+import Textfield from "../Textfield/textfield";
 import "./Form.css";
 
 function Form() {
@@ -19,8 +20,7 @@ function Form() {
                 type="text"
                 placeholder={"Hari"}
                 autoComplete={"given-name"}
-                text = {"First Name"}
-
+                text={"First Name"}
               />
               <Textfield
                 name={"label__textfield"}
@@ -28,8 +28,7 @@ function Form() {
                 type="text"
                 placeholder={"Bahadur"}
                 autoComplete={"family-name"}
-                text = {"Last Name"}
-
+                text={"Last Name"}
               />
             </div>
             <div className="form__text2">
@@ -39,8 +38,7 @@ function Form() {
                 type="email"
                 placeholder={"haribaharur@gmail.com"}
                 autoComplete={"email"}
-                text = {"Email"}
-
+                text={"Email"}
               />
             </div>
             <div className="form__text2">
@@ -50,8 +48,7 @@ function Form() {
                 type="tel"
                 placeholder={"837-388-9999"}
                 autoComplete={"tel"}
-                text = {"Phone"}
-
+                text={"Phone"}
               />
             </div>
             <div className="form__text3">
